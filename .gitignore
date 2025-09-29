@@ -1,0 +1,12 @@
+models/ldm/text2img-large/model.ckpt
+models/ldm/text2img-large/model.ckpt
+models/ldm/text2img-large/model.ckpt
+
+# large checkpoints
+models/ldm/text2img-large/model.ckpt
+*.ckpt
+*.pt
+*.pth
+*.npz
+*.bin
+*.zip
