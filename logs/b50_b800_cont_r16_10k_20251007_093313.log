@@ -1,0 +1,27 @@
+/opt/conda/lib/python3.8/site-packages/transformers/utils/generic.py:311: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+/opt/conda/lib/python3.8/site-packages/diffusers/utils/outputs.py:63: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+/opt/conda/lib/python3.8/site-packages/diffusers/utils/outputs.py:63: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+Loading pipeline components...:  14%|█▍        | 1/7 [00:01<00:10,  1.72s/it]Loading pipeline components...:  43%|████▎     | 3/7 [00:22<00:33,  8.26s/it]`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["id2label"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["bos_token_id"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["eos_token_id"]` will be overriden.
+Loading pipeline components...:  57%|█████▋    | 4/7 [00:33<00:27,  9.02s/it]Loading pipeline components...:  71%|███████▏  | 5/7 [00:35<00:13,  6.72s/it]Loading pipeline components...:  86%|████████▌ | 6/7 [00:35<00:04,  4.64s/it]Loading pipeline components...: 100%|██████████| 7/7 [00:36<00:00,  3.37s/it]Loading pipeline components...: 100%|██████████| 7/7 [00:36<00:00,  5.17s/it]
+[INFO] trainable params in LoRA: 1594368
+Traceback (most recent call last):
+  File "train_lora_minimal.py", line 135, in <module>
+    main()
+  File "train_lora_minimal.py", line 83, in main
+    dl = DataLoader(ds, batch_size=bs, shuffle=True, num_workers=4, pin_memory=True, drop_last=True)
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 351, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/data/sampler.py", line 144, in __init__
+    raise ValueError(f"num_samples should be a positive integer value, but got num_samples={self.num_samples}")
+ValueError: num_samples should be a positive integer value, but got num_samples=0

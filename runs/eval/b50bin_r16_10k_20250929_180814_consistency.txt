@@ -1,0 +1,9 @@
+
+=== VALUE CONSISTENCY (no CSV) ===
+pairs_used: 200
+feat_backend: CLIP-B/32
+real_test_pearson_r: 0.9624024774523355
+real_test_rmse: 0.3759378492832184
+fake_pearson_r: -0.18044857783028298
+fake_spearman_r: -0.16440463626767862
+fake_rmse: 2.166316509246826

@@ -1,201 +1,201 @@
-image_name,signal_b50,signal_b800,b50_bin
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_3_cell_expansion_3_0_threshold_0_7.png,23211.758295920077,8056.298616928341,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_2_4_cell_expansion_1_0_threshold_0_6.png,22320.495227734504,3481.2662670725013,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_4_cell_expansion_9_0_threshold_0_8.png,22958.994843041728,6405.231002141905,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_0_3_cell_expansion_3_0_threshold_0_8.png,23025.95776508004,6998.420407589704,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_3_1_cell_expansion_3_0_threshold_0_8.png,22295.564725834272,3345.9127204795477,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_1_cell_expansion_1_0_threshold_0_7.png,23154.122774055177,7626.1185014998755,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_2_3_cell_expansion_1_0_threshold_0_8.png,22973.695384859577,6698.9643720172535,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_3_4_cell_expansion_9_0_threshold_0_8.png,22295.564725834272,3345.9127204795477,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_4_3_cell_expansion_3_0_threshold_0_8.png,22648.754883000638,4924.7788947065665,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_2_2_cell_expansion_1_0_threshold_0_8.png,23026.319580729327,6867.683332010495,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_2_0_cell_expansion_9_0_threshold_0_8.png,22339.230536879662,3582.8544309236167,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_0_0_cell_expansion_15_0_threshold_0_7.png,22674.80997031999,5050.0321988251535,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_3_4_cell_expansion_3_0_threshold_0_6.png,22331.4896778524,3497.546839119883,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_2_4_cell_expansion_15_0_threshold_0_5.png,22621.28103046233,4905.256911970963,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_0_2_cell_expansion_1_0_threshold_0_4.png,23126.320327842357,7568.1719827036695,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_2_cell_expansion_7_0_threshold_0_8.png,22365.84749740904,3698.573501780272,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_0_1_cell_expansion_13_0_threshold_0_8.png,22295.564725834272,3345.9127204795477,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_0_cell_expansion_7_0_threshold_0_7.png,22435.760816802333,3969.989899625631,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_0_cell_expansion_1_0_threshold_0_6.png,22891.509623351583,6359.212101220925,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_2_cell_expansion_1_0_threshold_0_8.png,22675.947294111407,5271.85066202434,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_3_1_cell_expansion_5_0_threshold_0_8.png,23165.289924592882,7629.7054139984375,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_2_1_cell_expansion_1_0_threshold_0_5.png,23096.80426119544,7531.030735401867,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_3_cell_expansion_1_0_threshold_0_5.png,23153.546649894044,7748.531165739236,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_1_1_cell_expansion_5_0_threshold_0_8.png,23209.868637835072,7671.554806204187,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_2_cell_expansion_7_0_threshold_0_7.png,23174.6775509367,7562.4175954567545,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_3_cell_expansion_7_0_threshold_0_8.png,22718.530342957798,5333.159009020529,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_2_cell_expansion_9_0_threshold_0_8.png,22881.882436383232,6125.367519809034,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_4_4_cell_expansion_3_0_threshold_0_4.png,22526.006570431226,4336.811201117274,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_3_4_cell_expansion_1_0_threshold_0_6.png,23174.262177631983,7865.330658233862,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_1_cell_expansion_1_0_threshold_0_5.png,23116.987890023105,7520.7447239744,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_0_0_cell_expansion_1_0_threshold_0_4.png,22705.91974069917,5398.900846762341,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_1_0_cell_expansion_3_0_threshold_0_8.png,22941.970210439627,6488.389768543926,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_3_2_cell_expansion_3_0_threshold_0_7.png,22888.43878684024,6280.250510462409,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_3_cell_expansion_1_0_threshold_0_6.png,23143.811304194583,7687.147611631623,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_0_cell_expansion_1_0_threshold_0_4.png,22845.704970291103,6078.12576346839,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_0_2_cell_expansion_3_0_threshold_0_4.png,22951.26886441921,6657.047509984526,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_2_1_cell_expansion_3_0_threshold_0_8.png,22937.37290995096,6399.858681415145,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_1_cell_expansion_15_0_threshold_0_7.png,22849.956657911243,5877.401074971916,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_2_0_cell_expansion_13_0_threshold_0_8.png,22339.230536879662,3582.8544309236167,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_2_3_cell_expansion_15_0_threshold_0_8.png,22602.755210479307,4638.374292691711,0
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_3_cell_expansion_15_0_threshold_0_8.png,23816.17204141132,10942.899531730232,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_4_cell_expansion_5_0_threshold_0_6.png,23802.3725349463,11064.964404859757,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_0_1_cell_expansion_11_0_threshold_0_8.png,23478.79550788618,9045.837692286237,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_4_4_cell_expansion_1_0_threshold_0_7.png,23650.556908061582,10412.853375833018,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_0_cell_expansion_1_0_threshold_0_4.png,23268.482791507115,8291.223030620802,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_3_cell_expansion_3_0_threshold_0_7.png,23550.46614670564,9708.057447835301,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_0_0_cell_expansion_7_0_threshold_0_8.png,23241.481372286675,7894.107975792122,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_4_cell_expansion_1_0_threshold_0_6.png,23679.76995665773,10604.378958429936,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_2_2_cell_expansion_1_0_threshold_0_5.png,23359.189131673244,8847.026802185519,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_1_2_cell_expansion_5_0_threshold_0_8.png,23216.629753875503,7685.540196906419,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_4_cell_expansion_7_0_threshold_0_8.png,23783.918492497596,10755.137310744894,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_1_2_cell_expansion_3_0_threshold_0_7.png,23368.34876401935,8624.88057956122,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_2_3_cell_expansion_1_0_threshold_0_5.png,23639.53226996612,10384.935757024616,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_0_0_cell_expansion_1_0_threshold_0_5.png,23455.69622717428,9275.492903905388,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_2_3_cell_expansion_1_0_threshold_0_4.png,23279.954820432555,8471.031314123902,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_1_cell_expansion_15_0_threshold_0_6.png,23313.81225800492,8452.470929807401,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_2_cell_expansion_9_0_threshold_0_8.png,23584.36250308933,9756.880580292956,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_2_cell_expansion_11_0_threshold_0_7.png,23277.331097084272,8102.375040799807,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_4_0_cell_expansion_1_0_threshold_0_4.png,23858.9883889199,11574.687175187542,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_0_cell_expansion_11_0_threshold_0_7.png,23546.556804391963,9529.737694635602,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_1_1_cell_expansion_5_0_threshold_0_6.png,23699.75088897243,10720.778572403437,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_3_cell_expansion_9_0_threshold_0_8.png,23811.54602215232,10924.048873373107,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_1_2_cell_expansion_5_0_threshold_0_7.png,23699.61271367265,10610.633450263796,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_4_cell_expansion_1_0_threshold_0_5.png,23390.02051164636,9064.732254979705,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_1_3_cell_expansion_1_0_threshold_0_6.png,23267.794553313382,8388.713180907891,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_1_1_cell_expansion_11_0_threshold_0_8.png,23213.128578507167,7832.851504798738,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_4_4_cell_expansion_11_0_threshold_0_8.png,23648.081558205293,9814.12257217182,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_2_4_cell_expansion_13_0_threshold_0_8.png,23842.521534242213,10839.412467015414,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_0_cell_expansion_9_0_threshold_0_6.png,23797.340738709096,11049.607528120045,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_1_1_cell_expansion_15_0_threshold_0_8.png,23836.450260409747,10892.022045717973,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_4_0_cell_expansion_1_0_threshold_0_5.png,23345.93263814249,8692.243368033873,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_1_cell_expansion_15_0_threshold_0_4.png,23443.286274452257,9240.454911394309,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_0_4_cell_expansion_7_0_threshold_0_8.png,23549.446963622173,9311.909588623395,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_2_2_cell_expansion_9_0_threshold_0_6.png,23615.02262552987,9962.010504699174,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_1_1_cell_expansion_1_0_threshold_0_4.png,23280.171587281293,8334.253905828718,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_0_3_cell_expansion_1_0_threshold_0_7.png,23283.266407374125,8344.635728138772,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_4_3_cell_expansion_1_0_threshold_0_6.png,23753.48114953764,10921.971471099112,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_3_cell_expansion_11_0_threshold_0_8.png,23597.180633337957,9742.477862545169,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_1_cell_expansion_5_0_threshold_0_7.png,23807.877375787542,10883.200572246573,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_0_3_cell_expansion_15_0_threshold_0_8.png,23465.131085927704,8624.389849157615,1
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_2_cell_expansion_5_0_threshold_0_4.png,24251.418440523263,13966.942711010452,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_0_cell_expansion_15_0_threshold_0_7.png,24342.332757249576,14162.511983965,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_2_0_cell_expansion_7_0_threshold_0_6.png,24350.39909428277,14306.640008164097,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_2_cell_expansion_5_0_threshold_0_6.png,24213.542147652643,13557.25088557949,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_2_4_cell_expansion_13_0_threshold_0_8.png,24199.58257855325,12803.358693270036,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_0_4_cell_expansion_9_0_threshold_0_8.png,23951.564049097004,11712.770985214629,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_4_cell_expansion_13_0_threshold_0_7.png,24115.944768442285,12692.232184420507,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_3_3_cell_expansion_15_0_threshold_0_6.png,23980.007030980767,11933.157841977727,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_3_1_cell_expansion_7_0_threshold_0_7.png,24090.048745539658,12296.88340151767,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_1_3_cell_expansion_3_0_threshold_0_7.png,24081.223654275298,12607.826144306662,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_1_0_cell_expansion_7_0_threshold_0_5.png,24256.95825080751,13450.5017883587,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_2_cell_expansion_7_0_threshold_0_8.png,24002.64612844338,11793.495334344549,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_4_cell_expansion_15_0_threshold_0_8.png,24015.905059193454,11932.788178468758,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_1_cell_expansion_3_0_threshold_0_7.png,24120.31013839626,12958.138362532269,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_3_0_cell_expansion_15_0_threshold_0_8.png,24221.68237631634,12951.02482493477,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_0_3_cell_expansion_7_0_threshold_0_7.png,24319.241535715737,13768.470977655437,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_3_1_cell_expansion_3_0_threshold_0_4.png,24316.37378024528,14357.453273279763,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_1_cell_expansion_9_0_threshold_0_8.png,24219.881363275985,13180.296622534974,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_1_3_cell_expansion_3_0_threshold_0_5.png,24129.746057387616,13193.76477614895,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_1_4_cell_expansion_11_0_threshold_0_5.png,24085.33475543893,12908.631770098282,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_2_cell_expansion_7_0_threshold_0_7.png,24206.200061367446,13008.29439163208,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_3_2_cell_expansion_9_0_threshold_0_5.png,24258.811617448708,13389.482512622959,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_4_cell_expansion_3_0_threshold_0_5.png,24244.655539165247,14059.568364385674,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_2_4_cell_expansion_7_0_threshold_0_7.png,23999.094046129347,11673.423892748579,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_2_2_cell_expansion_11_0_threshold_0_8.png,24290.91298975527,13394.46154085112,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_2_3_cell_expansion_9_0_threshold_0_4.png,24336.18506132224,14515.297251026072,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_1_1_cell_expansion_15_0_threshold_0_7.png,24213.541493452656,13061.209573195809,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_0_2_cell_expansion_15_0_threshold_0_8.png,23923.50870533143,11541.104940873583,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_4_0_cell_expansion_11_0_threshold_0_8.png,24221.09196817502,13162.424403769804,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_2_1_cell_expansion_5_0_threshold_0_7.png,24039.034009618437,12357.95514216058,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_0_3_cell_expansion_15_0_threshold_0_8.png,24076.943343236075,12226.934883348877,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_2_2_cell_expansion_7_0_threshold_0_8.png,24155.807638061116,12679.356590199053,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_3_cell_expansion_5_0_threshold_0_4.png,24257.323259586174,13790.83078704498,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_1_0_cell_expansion_5_0_threshold_0_5.png,24096.88849116828,12663.994278749973,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_3_2_cell_expansion_15_0_threshold_0_6.png,24053.05632473977,12069.083794906215,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_2_2_cell_expansion_15_0_threshold_0_8.png,24171.507343156605,12580.215507905898,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_1_1_cell_expansion_5_0_threshold_0_5.png,24277.260915653893,13770.81746073426,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_0_cell_expansion_9_0_threshold_0_4.png,23908.800454997785,11798.056415477493,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_4_0_cell_expansion_9_0_threshold_0_7.png,24254.11226755239,13311.893672071423,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_1_4_cell_expansion_3_0_threshold_0_5.png,24359.83113265585,14605.379409588697,2
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_4_2_cell_expansion_15_0_threshold_0_6.png,24570.368803443213,16298.32298888488,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_2_cell_expansion_5_0_threshold_0_5.png,24533.499925928158,15637.928833672957,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_2_cell_expansion_11_0_threshold_0_6.png,24611.675572262466,15971.92049915629,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_2_3_cell_expansion_5_0_threshold_0_7.png,24411.965106511925,14550.371001080432,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_1_3_cell_expansion_15_0_threshold_0_7.png,24422.83661057455,14330.588091608734,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_0_1_cell_expansion_5_0_threshold_0_5.png,24586.22188374364,15925.089206564044,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_4_0_cell_expansion_9_0_threshold_0_6.png,24457.981612972984,14790.159959971692,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_0_cell_expansion_9_0_threshold_0_7.png,24572.07069341811,15702.625314461806,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_2_cell_expansion_7_0_threshold_0_4.png,24510.943561375498,15267.046705080633,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_3_2_cell_expansion_13_0_threshold_0_4.png,24366.170865450567,14683.233881228476,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_3_0_cell_expansion_5_0_threshold_0_5.png,24512.623115354385,15512.232379275283,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_1_0_cell_expansion_15_0_threshold_0_6.png,24623.70721514125,15943.765321296001,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_4_1_cell_expansion_9_0_threshold_0_7.png,24589.010219225267,15446.597569531434,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_0_1_cell_expansion_5_0_threshold_0_4.png,24624.451799651997,16269.727042870953,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_1_0_cell_expansion_7_0_threshold_0_6.png,24554.45224961328,15580.030003116806,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_1_3_cell_expansion_9_0_threshold_0_6.png,24562.012067851465,15524.36357572982,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_4_cell_expansion_7_0_threshold_0_5.png,24603.06630383792,15834.085241352299,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_0_cell_expansion_3_0_threshold_0_4.png,24366.885793772984,14590.044142889992,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_0_cell_expansion_9_0_threshold_0_6.png,24585.091609426032,15620.629000577808,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_4_cell_expansion_15_0_threshold_0_4.png,24392.341101443653,14561.627680171378,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_2_3_cell_expansion_13_0_threshold_0_7.png,24621.82145680913,15666.979524030738,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_3_cell_expansion_9_0_threshold_0_4.png,24599.863793008506,15902.586135381267,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_2_0_cell_expansion_11_0_threshold_0_5.png,24584.064115156518,15931.549907384957,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_2_cell_expansion_7_0_threshold_0_4.png,24512.33725378604,15264.541934062332,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_3_cell_expansion_7_0_threshold_0_6.png,24469.55538944116,14908.830286626546,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_4_cell_expansion_7_0_threshold_0_7.png,24366.247565649537,14452.701282839742,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_1_0_cell_expansion_13_0_threshold_0_4.png,24485.26271364942,14895.58435551581,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_3_cell_expansion_5_0_threshold_0_7.png,24523.509202701392,15119.087503659795,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_0_cell_expansion_3_0_threshold_0_5.png,24380.20490307853,14923.3842876571,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_3_4_cell_expansion_7_0_threshold_0_4.png,24515.46713913065,15559.123248601076,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_3_cell_expansion_13_0_threshold_0_6.png,24473.14652904251,14936.8658534905,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_2_cell_expansion_15_0_threshold_0_5.png,24396.630665088287,14271.241441380525,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_1_cell_expansion_13_0_threshold_0_4.png,24516.1685714087,15727.375296447812,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_2_cell_expansion_13_0_threshold_0_6.png,24539.567178441317,15357.409339500016,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_2_2_cell_expansion_11_0_threshold_0_6.png,24546.5655933598,15475.542630254531,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_2_cell_expansion_5_0_threshold_0_4.png,24595.104387383057,16045.230102408032,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_4_4_cell_expansion_11_0_threshold_0_6.png,24453.47428916565,15211.62073863463,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_4_cell_expansion_11_0_threshold_0_7.png,24509.279733655883,14906.382193903844,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_2_0_cell_expansion_3_0_threshold_0_5.png,24541.078718650977,15589.806173952116,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_0_0_cell_expansion_9_0_threshold_0_4.png,24626.13017651376,16367.73330166959,3
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_3_cell_expansion_9_0_threshold_0_6.png,24692.68743451672,16246.686736328014,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_0_cell_expansion_7_0_threshold_0_4.png,24881.74810311152,18245.9609631548,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_3_cell_expansion_13_0_threshold_0_4.png,24735.85242051275,16715.7791702678,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_4_0_cell_expansion_9_0_threshold_0_4.png,24711.72247241837,16785.572331368174,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_4_cell_expansion_7_0_threshold_0_5.png,24703.091627300142,16641.043357423554,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_4_cell_expansion_13_0_threshold_0_6.png,24652.832994377422,16331.619969762698,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_0_cell_expansion_9_0_threshold_0_4.png,24794.214118346288,17414.484697371838,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_1_cell_expansion_7_0_threshold_0_6.png,24732.48419818208,16982.65574608517,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_0_4_cell_expansion_9_0_threshold_0_4.png,24670.14645946116,16586.858078325768,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_2_0_cell_expansion_5_0_threshold_0_4.png,24742.014051920694,17179.807394145817,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_2_1_cell_expansion_15_0_threshold_0_6.png,24766.87544330736,16832.35648206821,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_2_1_cell_expansion_5_0_threshold_0_5.png,24775.520909596507,17405.500895181092,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_4_cell_expansion_11_0_threshold_0_6.png,24679.509712179726,16050.184288924807,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_2_2_cell_expansion_15_0_threshold_0_7.png,24685.59594005024,16228.480622665154,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_1_cell_expansion_13_0_threshold_0_5.png,24762.631342929668,16898.349042558002,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_1_cell_expansion_13_0_threshold_0_4.png,24707.35135130408,16612.173613325853,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_3_cell_expansion_5_0_threshold_0_4.png,24660.450081093946,16748.013547754286,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_0_cell_expansion_5_0_threshold_0_4.png,24673.920035531308,16392.282529075455,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_4_3_cell_expansion_13_0_threshold_0_4.png,24895.58033380061,18289.38092395631,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_1_2_cell_expansion_15_0_threshold_0_4.png,24934.793930328244,19110.29251871779,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_1_3_cell_expansion_9_0_threshold_0_6.png,24757.954960714647,16695.828418231322,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_4_cell_expansion_9_0_threshold_0_4.png,24779.922350158122,17011.994044077826,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_0_4_cell_expansion_7_0_threshold_0_5.png,24675.237527448837,16288.523115375463,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_4_2_cell_expansion_9_0_threshold_0_4.png,24702.894139433414,17533.03342623504,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_3_cell_expansion_15_0_threshold_0_5.png,24807.15713967895,17124.005171282275,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_1_0_cell_expansion_15_0_threshold_0_5.png,24710.09217509096,16655.903535315272,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_2_4_cell_expansion_9_0_threshold_0_6.png,24772.01567183129,16739.65367892705,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_4_cell_expansion_9_0_threshold_0_5.png,24695.5649853882,16673.1160982274,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_4_cell_expansion_15_0_threshold_0_5.png,24704.12169952814,16813.663079847513,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_0_cell_expansion_13_0_threshold_0_4.png,24771.5279977702,17160.48991927675,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_4_0_cell_expansion_5_0_threshold_0_5.png,24780.55102193096,17822.859792029034,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_1_2_cell_expansion_5_0_threshold_0_4.png,24901.4491843867,18877.7927103901,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_0_cell_expansion_9_0_threshold_0_5.png,24853.025505283065,17797.494459094054,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_2_4_cell_expansion_7_0_threshold_0_5.png,24710.21116139441,16447.81068676656,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_3_cell_expansion_9_0_threshold_0_4.png,24872.547822421093,17830.792715132367,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_0_cell_expansion_11_0_threshold_0_4.png,24672.060026517374,16215.805382502887,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_3_2_cell_expansion_15_0_threshold_0_6.png,24793.263447483856,17004.747765015785,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_2_cell_expansion_11_0_threshold_0_6.png,24682.526835886463,15971.922165064369,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_1_cell_expansion_5_0_threshold_0_4.png,24742.48212362978,17360.85823325214,4
-../binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_1_1_cell_expansion_7_0_threshold_0_4.png,24703.185958701368,16450.0956145995,4
+path,text
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_3_cell_expansion_5_0_threshold_0_4.png,"signal_b50=24257.3, signal_b800=13790.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_2_cell_expansion_7_0_threshold_0_7.png,"signal_b50=23174.7, signal_b800=7562.42"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_2_cell_expansion_15_0_threshold_0_8.png,"signal_b50=23756.2, signal_b800=10338.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_0_1_cell_expansion_11_0_threshold_0_8.png,"signal_b50=23699.4, signal_b800=10108.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_4_1_cell_expansion_5_0_threshold_0_5.png,"signal_b50=24650.1, signal_b800=16475.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_2_2_cell_expansion_7_0_threshold_0_8.png,"signal_b50=23827.9, signal_b800=10858.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_2_1_cell_expansion_15_0_threshold_0_8.png,"signal_b50=23114.8, signal_b800=7006.79"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_1_cell_expansion_5_0_threshold_0_6.png,"signal_b50=24652.5, signal_b800=16260.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_2_cell_expansion_9_0_threshold_0_8.png,"signal_b50=24131.1, signal_b800=12737.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_0_0_cell_expansion_11_0_threshold_0_8.png,"signal_b50=23715.6, signal_b800=10304.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_0_cell_expansion_3_0_threshold_0_6.png,"signal_b50=24212.9, signal_b800=13825"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_0_2_cell_expansion_1_0_threshold_0_5.png,"signal_b50=23105.8, signal_b800=7470.96"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_3_cell_expansion_9_0_threshold_0_7.png,"signal_b50=24184.2, signal_b800=12980.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_4_2_cell_expansion_3_0_threshold_0_7.png,"signal_b50=23282.2, signal_b800=8200.04"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_3_1_cell_expansion_7_0_threshold_0_5.png,"signal_b50=24615.1, signal_b800=15998.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_0_1_cell_expansion_13_0_threshold_0_8.png,"signal_b50=23515.2, signal_b800=9247.28"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_0_cell_expansion_5_0_threshold_0_8.png,"signal_b50=22295.6, signal_b800=3345.91"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_3_4_cell_expansion_3_0_threshold_0_7.png,"signal_b50=24015.9, signal_b800=12502.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_3_3_cell_expansion_1_0_threshold_0_6.png,"signal_b50=23199.9, signal_b800=8001.68"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_3_cell_expansion_11_0_threshold_0_5.png,"signal_b50=24807, signal_b800=17122"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_2_cell_expansion_1_0_threshold_0_4.png,"signal_b50=24493.9, signal_b800=15711.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_1_0_cell_expansion_13_0_threshold_0_6.png,"signal_b50=24261.1, signal_b800=13420"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_2_3_cell_expansion_13_0_threshold_0_6.png,"signal_b50=24470.5, signal_b800=15031.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_1_1_cell_expansion_11_0_threshold_0_6.png,"signal_b50=24137.5, signal_b800=12827.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_2_cell_expansion_11_0_threshold_0_7.png,"signal_b50=24470.5, signal_b800=14951.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_0_3_cell_expansion_15_0_threshold_0_6.png,"signal_b50=24026.7, signal_b800=12380.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_3_cell_expansion_9_0_threshold_0_5.png,"signal_b50=24550.1, signal_b800=15406.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_4_cell_expansion_7_0_threshold_0_5.png,"signal_b50=24703.1, signal_b800=16641"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_3_cell_expansion_1_0_threshold_0_5.png,"signal_b50=23898.5, signal_b800=11853.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_4_1_cell_expansion_15_0_threshold_0_8.png,"signal_b50=23641.1, signal_b800=9810.19"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_4_cell_expansion_3_0_threshold_0_6.png,"signal_b50=24196.9, signal_b800=13642.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_4_cell_expansion_9_0_threshold_0_7.png,"signal_b50=24381, signal_b800=14532.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_1_1_cell_expansion_15_0_threshold_0_7.png,"signal_b50=24213.5, signal_b800=13061.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_1_1_cell_expansion_7_0_threshold_0_5.png,"signal_b50=24681.7, signal_b800=16127"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_4_cell_expansion_1_0_threshold_0_7.png,"signal_b50=22921, signal_b800=6495.58"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_2_0_cell_expansion_13_0_threshold_0_8.png,"signal_b50=22295.6, signal_b800=3345.91"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_3_3_cell_expansion_13_0_threshold_0_4.png,"signal_b50=24665.2, signal_b800=16496.9"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_3_cell_expansion_11_0_threshold_0_6.png,"signal_b50=24424.5, signal_b800=14868.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_0_cell_expansion_1_0_threshold_0_4.png,"signal_b50=23297, signal_b800=8519.63"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_0_2_cell_expansion_11_0_threshold_0_5.png,"signal_b50=24705.6, signal_b800=16370.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_2_2_cell_expansion_3_0_threshold_0_7.png,"signal_b50=24156.2, signal_b800=12957.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_4_cell_expansion_5_0_threshold_0_7.png,"signal_b50=23418.8, signal_b800=8825.88"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_1_2_cell_expansion_3_0_threshold_0_7.png,"signal_b50=24055.5, signal_b800=12496"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_3_3_cell_expansion_3_0_threshold_0_6.png,"signal_b50=23468, signal_b800=9312.08"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_2_0_cell_expansion_3_0_threshold_0_4.png,"signal_b50=24348.2, signal_b800=14687.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_0_cell_expansion_7_0_threshold_0_8.png,"signal_b50=23875.9, signal_b800=11006.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_2_cell_expansion_1_0_threshold_0_5.png,"signal_b50=23120, signal_b800=7507.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_3_cell_expansion_7_0_threshold_0_6.png,"signal_b50=24434.9, signal_b800=14667.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_0_cell_expansion_11_0_threshold_0_8.png,"signal_b50=23522.8, signal_b800=9033.86"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_2_2_cell_expansion_15_0_threshold_0_7.png,"signal_b50=24685.6, signal_b800=16228.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_4_cell_expansion_1_0_threshold_0_5.png,"signal_b50=23505.2, signal_b800=9771.68"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_1_4_cell_expansion_13_0_threshold_0_5.png,"signal_b50=24264.2, signal_b800=13826.9"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_0_cell_expansion_1_0_threshold_0_4.png,"signal_b50=23752.5, signal_b800=11211.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_0_2_cell_expansion_15_0_threshold_0_4.png,"signal_b50=24535.2, signal_b800=15356.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_2_2_cell_expansion_7_0_threshold_0_7.png,"signal_b50=24004.7, signal_b800=11670.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_3_cell_expansion_11_0_threshold_0_5.png,"signal_b50=24851.7, signal_b800=17580.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_0_3_cell_expansion_13_0_threshold_0_4.png,"signal_b50=24450, signal_b800=14471.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_2_cell_expansion_9_0_threshold_0_5.png,"signal_b50=24395.3, signal_b800=14266"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_1_1_cell_expansion_13_0_threshold_0_7.png,"signal_b50=23757.3, signal_b800=10857.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_0_cell_expansion_13_0_threshold_0_5.png,"signal_b50=24312.5, signal_b800=13631.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_4_cell_expansion_15_0_threshold_0_7.png,"signal_b50=24117.2, signal_b800=12699.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_0_cell_expansion_11_0_threshold_0_5.png,"signal_b50=24767.3, signal_b800=16910.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_4_0_cell_expansion_7_0_threshold_0_6.png,"signal_b50=24583.4, signal_b800=15899.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_4_cell_expansion_1_0_threshold_0_4.png,"signal_b50=23108.8, signal_b800=7471.57"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_1_4_cell_expansion_15_0_threshold_0_6.png,"signal_b50=24594.9, signal_b800=15738.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_4_4_cell_expansion_9_0_threshold_0_6.png,"signal_b50=24169.7, signal_b800=13117.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_4_cell_expansion_3_0_threshold_0_8.png,"signal_b50=22439.8, signal_b800=4045.37"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_3_1_cell_expansion_15_0_threshold_0_5.png,"signal_b50=24386, signal_b800=14088.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_4_3_cell_expansion_15_0_threshold_0_4.png,"signal_b50=24471.4, signal_b800=15011.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_0_cell_expansion_7_0_threshold_0_5.png,"signal_b50=24562.1, signal_b800=15666.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_1_2_cell_expansion_15_0_threshold_0_5.png,"signal_b50=24861, signal_b800=17722.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_4_cell_expansion_7_0_threshold_0_8.png,"signal_b50=22864.6, signal_b800=6065.62"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_2_3_cell_expansion_11_0_threshold_0_8.png,"signal_b50=23515.4, signal_b800=9106.28"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_2_3_cell_expansion_11_0_threshold_0_8.png,"signal_b50=23832.4, signal_b800=10658.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_4_cell_expansion_13_0_threshold_0_5.png,"signal_b50=24322.5, signal_b800=13924.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_3_0_cell_expansion_5_0_threshold_0_4.png,"signal_b50=24700.1, signal_b800=16839.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_1_4_cell_expansion_3_0_threshold_0_4.png,"signal_b50=24334.6, signal_b800=14267.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_2_cell_expansion_11_0_threshold_0_7.png,"signal_b50=23277.3, signal_b800=8102.38"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_2_3_cell_expansion_7_0_threshold_0_6.png,"signal_b50=24307.3, signal_b800=13517.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_0_cell_expansion_3_0_threshold_0_5.png,"signal_b50=24380.2, signal_b800=14923.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_1_0_cell_expansion_7_0_threshold_0_6.png,"signal_b50=24267.2, signal_b800=13391.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_4_4_cell_expansion_11_0_threshold_0_6.png,"signal_b50=24561.4, signal_b800=15342.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_2_cell_expansion_13_0_threshold_0_4.png,"signal_b50=24552.4, signal_b800=15463.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_0_1_cell_expansion_7_0_threshold_0_4.png,"signal_b50=24530.2, signal_b800=15366.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_3_cell_expansion_7_0_threshold_0_6.png,"signal_b50=24400.6, signal_b800=14286.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_2_3_cell_expansion_13_0_threshold_0_5.png,"signal_b50=24487.6, signal_b800=15233.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_0_1_cell_expansion_7_0_threshold_0_5.png,"signal_b50=24308.5, signal_b800=13751"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_4_4_cell_expansion_7_0_threshold_0_6.png,"signal_b50=24321.8, signal_b800=13693.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_3_cell_expansion_7_0_threshold_0_6.png,"signal_b50=24452.8, signal_b800=14742"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_1_cell_expansion_7_0_threshold_0_7.png,"signal_b50=23173, signal_b800=7627.92"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_1_2_cell_expansion_3_0_threshold_0_7.png,"signal_b50=23368.3, signal_b800=8624.88"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_2_1_cell_expansion_15_0_threshold_0_6.png,"signal_b50=24457.7, signal_b800=14541.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_1_cell_expansion_13_0_threshold_0_6.png,"signal_b50=24453.3, signal_b800=14628.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_0_cell_expansion_5_0_threshold_0_5.png,"signal_b50=24605.1, signal_b800=16339.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_3_cell_expansion_15_0_threshold_0_5.png,"signal_b50=24426.7, signal_b800=14456.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_4_1_cell_expansion_1_0_threshold_0_7.png,"signal_b50=23316.2, signal_b800=8436.9"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_3_4_cell_expansion_13_0_threshold_0_8.png,"signal_b50=22295.6, signal_b800=3345.91"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_3_cell_expansion_15_0_threshold_0_8.png,"signal_b50=24255.4, signal_b800=13282"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_4_3_cell_expansion_13_0_threshold_0_6.png,"signal_b50=22416, signal_b800=3834.02"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_4_0_cell_expansion_13_0_threshold_0_7.png,"signal_b50=24549.9, signal_b800=15543.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_2_0_cell_expansion_9_0_threshold_0_6.png,"signal_b50=24397.5, signal_b800=14544.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_4_1_cell_expansion_1_0_threshold_0_8.png,"signal_b50=22888.9, signal_b800=6285.43"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_2_4_cell_expansion_1_0_threshold_0_4.png,"signal_b50=23375.1, signal_b800=9054.13"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_2_cell_expansion_5_0_threshold_0_8.png,"signal_b50=22677.4, signal_b800=5172.19"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_2_1_cell_expansion_7_0_threshold_0_8.png,"signal_b50=23023.6, signal_b800=6631.91"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_1_cell_expansion_5_0_threshold_0_6.png,"signal_b50=24637, signal_b800=16306.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_2_0_cell_expansion_11_0_threshold_0_5.png,"signal_b50=24584.1, signal_b800=15931.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_3_3_cell_expansion_13_0_threshold_0_5.png,"signal_b50=24641.2, signal_b800=15721.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_0_1_cell_expansion_9_0_threshold_0_4.png,"signal_b50=24437.2, signal_b800=14543.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_2_cell_expansion_3_0_threshold_0_7.png,"signal_b50=23916.9, signal_b800=11709.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_4_cell_expansion_1_0_threshold_0_7.png,"signal_b50=22924.2, signal_b800=6434.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_2_2_cell_expansion_9_0_threshold_0_6.png,"signal_b50=23615, signal_b800=9962.01"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_4_3_cell_expansion_3_0_threshold_0_6.png,"signal_b50=23741.4, signal_b800=10801.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_1_cell_expansion_1_0_threshold_0_6.png,"signal_b50=23600.7, signal_b800=10090.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_1_3_cell_expansion_5_0_threshold_0_4.png,"signal_b50=24618.6, signal_b800=16188.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_2_0_cell_expansion_1_0_threshold_0_6.png,"signal_b50=23428.8, signal_b800=9208.46"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_2_2_cell_expansion_9_0_threshold_0_6.png,"signal_b50=24546.3, signal_b800=15472.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_0_2_cell_expansion_9_0_threshold_0_7.png,"signal_b50=23524.5, signal_b800=9466.55"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_4_0_cell_expansion_1_0_threshold_0_4.png,"signal_b50=23859, signal_b800=11574.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_4_1_cell_expansion_15_0_threshold_0_6.png,"signal_b50=24299.9, signal_b800=14082.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_4_cell_expansion_13_0_threshold_0_6.png,"signal_b50=24587.8, signal_b800=15676.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_3_1_cell_expansion_7_0_threshold_0_6.png,"signal_b50=23653, signal_b800=10242.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_4_4_cell_expansion_13_0_threshold_0_8.png,"signal_b50=24352.4, signal_b800=13818"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_1_cell_expansion_15_0_threshold_0_7.png,"signal_b50=22850, signal_b800=5877.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_4_0_cell_expansion_3_0_threshold_0_6.png,"signal_b50=24480.7, signal_b800=15346"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_1_1_cell_expansion_9_0_threshold_0_7.png,"signal_b50=24445.4, signal_b800=14590.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_3_1_cell_expansion_15_0_threshold_0_7.png,"signal_b50=24550.8, signal_b800=15386.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_0_2_cell_expansion_5_0_threshold_0_5.png,"signal_b50=24317.4, signal_b800=14221.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_4_3_cell_expansion_9_0_threshold_0_7.png,"signal_b50=22295.6, signal_b800=3345.91"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_4_1_cell_expansion_9_0_threshold_0_4.png,"signal_b50=24863.3, signal_b800=17947.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_3_3_cell_expansion_13_0_threshold_0_6.png,"signal_b50=24545.5, signal_b800=15124.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_2_1_cell_expansion_11_0_threshold_0_4.png,"signal_b50=24917.8, signal_b800=18508.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_1_4_cell_expansion_15_0_threshold_0_7.png,"signal_b50=22414.1, signal_b800=3841.71"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_3_3_cell_expansion_7_0_threshold_0_4.png,"signal_b50=24344, signal_b800=14225.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_3_1_cell_expansion_5_0_threshold_0_6.png,"signal_b50=23931.8, signal_b800=11762.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_3_4_cell_expansion_5_0_threshold_0_6.png,"signal_b50=24517.6, signal_b800=15533.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_0_cell_expansion_5_0_threshold_0_4.png,"signal_b50=23094.5, signal_b800=7313.55"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_2_cell_expansion_13_0_threshold_0_6.png,"signal_b50=24539.6, signal_b800=15357.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_1_1_cell_expansion_7_0_threshold_0_8.png,"signal_b50=23112.3, signal_b800=7123.11"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_2_cell_expansion_3_0_threshold_0_7.png,"signal_b50=23280.5, signal_b800=8139.41"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_4_3_cell_expansion_15_0_threshold_0_4.png,"signal_b50=24866.5, signal_b800=17924.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_4_2_cell_expansion_15_0_threshold_0_4.png,"signal_b50=24792.8, signal_b800=17241.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_2_0_cell_expansion_13_0_threshold_0_4.png,"signal_b50=22845.7, signal_b800=5960.08"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_1_0_cell_expansion_3_0_threshold_0_7.png,"signal_b50=23520.4, signal_b800=9615.68"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_1_3_cell_expansion_1_0_threshold_0_4.png,"signal_b50=23586, signal_b800=10032.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_4_2_cell_expansion_11_0_threshold_0_8.png,"signal_b50=24247.2, signal_b800=13229.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_2_cell_expansion_13_0_threshold_0_4.png,"signal_b50=24706.2, signal_b800=16701.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_4_4_cell_expansion_11_0_threshold_0_5.png,"signal_b50=24876, signal_b800=17890.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_3_4_cell_expansion_5_0_threshold_0_4.png,"signal_b50=24930.9, signal_b800=18723.9"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_3_1_cell_expansion_11_0_threshold_0_5.png,"signal_b50=24789.9, signal_b800=17567.9"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_0_cell_expansion_11_0_threshold_0_4.png,"signal_b50=24591.8, signal_b800=15851.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_1_0_cell_expansion_5_0_threshold_0_5.png,"signal_b50=24096.9, signal_b800=12664"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_4_3_cell_expansion_15_0_threshold_0_5.png,"signal_b50=24657.1, signal_b800=16181"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_1_4_cell_expansion_7_0_threshold_0_5.png,"signal_b50=24237.1, signal_b800=13604.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_2_4_cell_expansion_11_0_threshold_0_6.png,"signal_b50=22379.5, signal_b800=3769.69"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_1_1_cell_expansion_13_0_threshold_0_6.png,"signal_b50=23836.5, signal_b800=11449.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_0_cell_expansion_11_0_threshold_0_6.png,"signal_b50=23826.8, signal_b800=11181.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_2_0_cell_expansion_9_0_threshold_0_8.png,"signal_b50=22339.2, signal_b800=3582.85"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_1_1_cell_expansion_5_0_threshold_0_6.png,"signal_b50=23699.8, signal_b800=10720.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_3_3_cell_expansion_7_0_threshold_0_8.png,"signal_b50=22295.6, signal_b800=3345.91"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_2_cell_expansion_9_0_threshold_0_6.png,"signal_b50=24653.2, signal_b800=16044.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_2_1_cell_expansion_5_0_threshold_0_6.png,"signal_b50=24594.4, signal_b800=15946"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_1_cell_expansion_15_0_threshold_0_7.png,"signal_b50=24561.7, signal_b800=15433.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_3_cell_expansion_13_0_threshold_0_8.png,"signal_b50=23382, signal_b800=8537.96"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_0_4_cell_expansion_5_0_threshold_0_6.png,"signal_b50=24412.3, signal_b800=14782.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_1_cell_expansion_11_0_threshold_0_5.png,"signal_b50=24366.4, signal_b800=14030.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_2_cell_expansion_1_0_threshold_0_4.png,"signal_b50=23268.8, signal_b800=8279.96"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_3_4_cell_expansion_9_0_threshold_0_6.png,"signal_b50=24799.9, signal_b800=17282.9"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_4_cell_expansion_7_0_threshold_0_8.png,"signal_b50=23783.9, signal_b800=10755.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_2_1_cell_expansion_9_0_threshold_0_4.png,"signal_b50=24751.6, signal_b800=16944.9"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_2_cell_expansion_3_0_threshold_0_5.png,"signal_b50=24225, signal_b800=13901.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_2_3_cell_expansion_11_0_threshold_0_4.png,"signal_b50=24829.2, signal_b800=17470.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_4_2_cell_expansion_1_0_threshold_0_7.png,"signal_b50=23053.6, signal_b800=7330.26"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_4_3_cell_expansion_9_0_threshold_0_5.png,"signal_b50=24407.1, signal_b800=14453.7"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A1HT_4_1_cell_expansion_7_0_threshold_0_6.png,"signal_b50=24622.3, signal_b800=16042.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_1_3_cell_expansion_15_0_threshold_0_5.png,"signal_b50=24872.1, signal_b800=17929.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_3_3_cell_expansion_11_0_threshold_0_7.png,"signal_b50=23946.6, signal_b800=11558.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_1_4_cell_expansion_5_0_threshold_0_6.png,"signal_b50=24496, signal_b800=14973.6"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-BC-A69I_3_1_cell_expansion_5_0_threshold_0_8.png,"signal_b50=23165.3, signal_b800=7629.71"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_0_2_cell_expansion_5_0_threshold_0_7.png,"signal_b50=24551.6, signal_b800=15524"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_4_3_cell_expansion_9_0_threshold_0_4.png,"signal_b50=24885.1, signal_b800=18039.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_4_2_cell_expansion_15_0_threshold_0_7.png,"signal_b50=24723.7, signal_b800=16630.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_1_cell_expansion_9_0_threshold_0_7.png,"signal_b50=24284.7, signal_b800=13568.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_0_3_cell_expansion_9_0_threshold_0_4.png,"signal_b50=24735.9, signal_b800=16723"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A5SK_1_1_cell_expansion_3_0_threshold_0_6.png,"signal_b50=23508.6, signal_b800=9484.67"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_3_2_cell_expansion_5_0_threshold_0_4.png,"signal_b50=24786, signal_b800=17463.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_1_0_cell_expansion_13_0_threshold_0_6.png,"signal_b50=23031.5, signal_b800=6979.8"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-5261_3_1_cell_expansion_15_0_threshold_0_8.png,"signal_b50=24032.1, signal_b800=11826.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_3_4_cell_expansion_13_0_threshold_0_5.png,"signal_b50=24672.7, signal_b800=16568.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A3MA_4_0_cell_expansion_13_0_threshold_0_5.png,"signal_b50=24895.3, signal_b800=18203.3"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-DD-AAED_4_2_cell_expansion_5_0_threshold_0_4.png,"signal_b50=24608.2, signal_b800=16234.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_0_1_cell_expansion_1_0_threshold_0_7.png,"signal_b50=22405.9, signal_b800=3912.32"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_0_2_cell_expansion_15_0_threshold_0_7.png,"signal_b50=24475.7, signal_b800=14734.2"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-CC-A8HT_0_0_cell_expansion_3_0_threshold_0_8.png,"signal_b50=22724.1, signal_b800=5382.77"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_4_0_cell_expansion_3_0_threshold_0_7.png,"signal_b50=23796.2, signal_b800=10991.5"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_0_0_cell_expansion_5_0_threshold_0_8.png,"signal_b50=23463.2, signal_b800=9051.06"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-K7-AAU7_3_4_cell_expansion_3_0_threshold_0_6.png,"signal_b50=23446.9, signal_b800=9168.1"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_3_4_cell_expansion_9_0_threshold_0_8.png,"signal_b50=22295.6, signal_b800=3345.91"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-G3-A7M6_1_4_cell_expansion_1_0_threshold_0_8.png,"signal_b50=22497, signal_b800=4392.4"
+/workspace/binary_PNG/binary_labels_mask_case_id_TCGA-YA-A8S7_4_4_cell_expansion_11_0_threshold_0_8.png,"signal_b50=22295.6, signal_b800=3345.91"

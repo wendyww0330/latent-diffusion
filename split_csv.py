@@ -88,35 +88,69 @@ if __name__ == "__main__":
     ap.add_argument("--seed",  type=int, default=42)
     ap.add_argument("--outdir", default="splits")
     ap.add_argument("--dry-run", action="store_true", help="只检查列，不写文件")
+    ap.add_argument("--compose", default=None,
+                help="用 Python 格式串把多列拼成文本列，例如: "
+                     "'signal_b50={signal_b50:.6g}, signal_b800={signal_b800:.6g}'。"
+                     "若提供，则自动生成列名 __text 并作为 txt 列使用。")
+    ap.add_argument("--abs-paths", action="store_true",
+                    help="将选定的图片列转换为绝对路径")
     args = ap.parse_args()
 
     df = read_flexible_csv(args.csv)
+
+    # ### NEW: 如果传了 --compose，就用模板把多列拼成一列 __text
+    if args.compose:
+        # 支持 {col:.6g} 等格式说明
+        def row_fmt(r):
+            # 允许格式化器取到列名
+            return args.compose.format(**{k: r[k] for k in df.columns})
+        df["__text"] = df.apply(row_fmt, axis=1)
+        # 告诉后续选择列时用 __text
+        args.txt_col_name = "__text"
+
     # 打印标准化前后的列名
     orig_cols = list(df.columns)
     norm_cols = [normalize_col(c) for c in orig_cols]
     print("[INFO] columns:", orig_cols, "shape:", df.shape)
     print("[INFO] normalized:", norm_cols)
 
+
     # 选择列（支持按名或按索引）
     img_col = pick_col(df, args.img_col_name, args.img_col_idx if args.img_col_idx is not None else 0)
     txt_col = pick_col(df, args.txt_col_name, args.txt_col_idx if args.txt_col_idx is not None else 1)
     print(f"[OK] picked img_col={img_col!r}, txt_col={txt_col!r}")
 
+
+
     if args.dry_run:
         print("[DRY RUN] Done. No files written.")
         raise SystemExit(0)
 
-    # 判定文本列是否为数值 → 决定分层方式
-    txt_vals = df[txt_col]
-    numeric = pd.to_numeric(txt_vals, errors="coerce")
-    is_numeric = numeric.notna().mean() > 0.95
-    if is_numeric:
-        q = pd.qcut(numeric, q=min(args.bins, max(1, numeric.nunique())), duplicates="drop")
-        df["_strata"] = q.astype(str)
-    else:
-        lens = txt_vals.astype(str).str.len()
+
+
+    # —— 替换你脚本中 “判定文本列是否为数值 → 决定分层方式” 那一整段 —— 
+    # 原地放到 pick_col 之后、写文件之前
+
+    # 统一先拿到文本列并转成字符串
+    txt_vals = df[txt_col].astype(str)
+
+    if args.compose:
+        # 显式告诉我们这是拼接文本 → 按长度分层
+        lens = txt_vals.str.len()
         q = pd.qcut(lens, q=min(args.bins, max(1, lens.nunique())), duplicates="drop")
         df["_strata"] = q.astype(str)
+        is_numeric = False
+    else:
+        # 自动判定是否为数值
+        numeric = pd.to_numeric(txt_vals, errors="coerce")
+        is_numeric = numeric.notna().mean() > 0.95
+        if is_numeric:
+            q = pd.qcut(numeric, q=min(args.bins, max(1, numeric.nunique())), duplicates="drop")
+        else:
+            lens = txt_vals.str.len()
+            q = pd.qcut(lens, q=min(args.bins, max(1, lens.nunique())), duplicates="drop")
+        df["_strata"] = q.astype(str)
+
 
     train_df, val_df, test_df = stratified_split(
         df, "_strata", train=args.train, val=args.val, test=args.test, seed=args.seed
