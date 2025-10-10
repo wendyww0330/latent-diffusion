@@ -11,6 +11,10 @@ from diffusers.optimization import get_cosine_schedule_with_warmup
 
 from numeric_encoder import NumericEncoder
 
+KEY = os.environ.get("ENC_KEY", "b50")  # "b50" 或 "b800"
+assert KEY in {"b50", "b800"}, "ENC_KEY must be 'b50' or 'b800'"
+
+
 # ---------- Dataset ----------
 class SidecarDataset(Dataset):
     def __init__(self, root, image_size=512):
@@ -39,7 +43,10 @@ class SidecarDataset(Dataset):
         b800_str = m2.group(1).rstrip(",;").replace(",", "")
         b50  = float(b50_str)
         b800 = float(b800_str)
-        cond = torch.tensor([b50, b800], dtype=torch.float32)
+
+        value = b50 if KEY == "b50" else b800
+        cond = torch.tensor([value], dtype=torch.float32)
+
         stem = os.path.splitext(t)[0]
         img_path = None
         for ext in [".png",".jpg",".jpeg",".bmp",".webp",".tif",".tiff"]:
@@ -94,7 +101,7 @@ def main():
     allc = np.stack([ds[i]["cond"].numpy() for i in range(len(ds))],0)
     cond_mean, cond_std = allc.mean(0), allc.std(0)
 
-    enc = NumericEncoder(seq_len=16, hidden_size=pipe.text_encoder.config.hidden_size, cond_dim=2).to(device)
+    enc = NumericEncoder(seq_len=16, hidden_size=pipe.text_encoder.config.hidden_size, cond_dim=1).to(device)
     enc.set_norm(cond_mean, cond_std)
     enc.train()
 

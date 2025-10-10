@@ -22,13 +22,18 @@ def _extract_num(text: str, key: str):
     except ValueError:
         return None
 
-def parse_cond(text: str):
-    b50  = _extract_num(text, "signal_b50")
-    b800 = _extract_num(text, "signal_b800")
-    if b50 is None or b800 is None:
+def parse_cond(text: str, key: str):
+    # 复用我们之前的健壮解析（去千分位/尾逗号）
+    import re, torch
+    _NUM_RE = r"([-+]?\d[\d,]*(?:\.\d+)?(?:[eE][-+]?\d+)?)"
+    m = re.search(rf"signal_{key}\s*=\s*{_NUM_RE}\s*[,;]?", text)
+    if not m: return None
+    s = m.group(1).rstrip(",;").replace(",", "")
+    try:
+        return torch.tensor([float(s)], dtype=torch.float32)  # shape [1]
+    except ValueError:
         return None
-    import torch
-    return torch.tensor([b50, b800], dtype=torch.float32)
+
 
 def main(args):
     device="cuda" if torch.cuda.is_available() else "cpu"
@@ -51,27 +56,15 @@ def main(args):
         with open(t,"r",encoding="utf-8") as f: 
             s=f.read().strip()
 
-        cond=parse_cond(s); 
-
-        if cond is None: 
-            # 读取 sidecar 文本并解析 (b50, b800)
-            continue
-         # 形状 [1, 2]，放到 GPU
-        cond=cond.unsqueeze(0).to(device)  # [1,2]
-        # 前向生成
+        cond = parse_cond(s, args.key)
+        if cond is None: continue
+        cond = cond.unsqueeze(0).to(device)  # [1,1]
         with torch.no_grad():
-            pos = enc(cond)                               # [1, L, 768]
-            neg = enc.negative(batch_size=1)              # [1, L, 768]
+            pos = enc(cond).to(pipe.unet.dtype)
+            neg = enc.negative(1).to(pipe.unet.dtype)
+            img = pipe(prompt_embeds=pos, negative_prompt_embeds=neg,
+                    num_inference_steps=args.steps, guidance_scale=args.guidance).images[0]
 
-            # ★ 与 pipe 的 UNet dtype 对齐（通常是 float16）
-            target_dtype = pipe.unet.dtype
-            pos = pos.to(target_dtype)
-            neg = neg.to(target_dtype)
-
-            img = pipe(prompt_embeds=pos,
-                       negative_prompt_embeds=neg,
-                       num_inference_steps=args.steps,
-                       guidance_scale=args.guidance).images[0]
         img.save(os.path.join(args.out_dir, stem + ".png"))
 
 if __name__ == "__main__":
@@ -83,4 +76,5 @@ if __name__ == "__main__":
     ap.add_argument("--out_dir", required=True)
     ap.add_argument("--steps", type=int, default=30)
     ap.add_argument("--guidance", type=float, default=7.5)
+    ap.add_argument("--key", choices=["b50","b800"], required=True, help="which scalar to condition on")
     args=ap.parse_args(); main(args)
