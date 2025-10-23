@@ -8,7 +8,7 @@ from torchvision import transforms
 from diffusers import StableDiffusionPipeline, DDPMScheduler
 from diffusers.models.attention_processor import LoRAAttnProcessor
 from diffusers.optimization import get_cosine_schedule_with_warmup
-
+import csv, time
 from numeric_encoder import NumericEncoder
 
 KEY = os.environ.get("ENC_KEY", "b50")  # "b50" 或 "b800"
@@ -83,6 +83,12 @@ def main():
     train_dir=os.environ.get("TRAIN_DIR","/workspace/train_data_cont")
     out_dir=os.environ.get("OUT_DIR","/workspace/experiments/numeric_enc_lora")
     os.makedirs(out_dir, exist_ok=True)
+
+    log_path = os.path.join(out_dir, "train_loss1022.tsv")
+    if not os.path.exists(log_path):
+        with open(log_path, "w", newline="") as f:
+            w = csv.writer(f, delimiter="\t")
+            w.writerow(["step", "loss", "lr", "timestamp"])
 
     # 1) base pipeline
     pipe = StableDiffusionPipeline.from_pretrained(model_name, torch_dtype=torch.float16)
@@ -162,8 +168,11 @@ def main():
             step += 1
 
             if step % 50 == 0:
-                print(f"step {step}/{max_steps} | loss {loss.item():.4f} | "
-                    f"latents.dtype={latents.dtype} text_emb.dtype={text_emb.dtype}")
+                print(f"step {step}/{max_steps} | loss {loss.item():.4f}")
+                with open(log_path, "a", newline="") as f:
+                    w = csv.writer(f, delimiter="\t")
+                    w.writerow([step, float(loss.item()),
+                                float(sch.get_last_lr()[0]), int(time.time())])
 
             if step % SAVE_EVERY == 0:
                 pipe.unet.save_attn_procs(out_dir)
