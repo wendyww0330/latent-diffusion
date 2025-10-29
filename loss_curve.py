@@ -1,33 +1,45 @@
+# plot_five_losses.py
 import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-# route setting
-tsv_path = "./experiments/numeric_enc_lora_20251022_164834/train_loss1022.tsv"     
-out_dir = Path("./plots")
-out_dir.mkdir(exist_ok=True)
-out_file = out_dir / "train_loss_curve_1022_log.png"
+# pair
+pairs = [
+    ("./experiments/b50b800test1/train_loss.tsv", "./plots/b50b800test1.png"),
+    ("./experiments/b50b800test2/train_loss.tsv", "./plots/b50b800test2.png"),
+    ("./experiments/b50b800test3/train_loss.tsv", "./plots/b50b800test3.png"),
+    ("./experiments/b50b800test4/train_loss.tsv", "./plots/b50b800test4.png"),
+    ("./experiments/b50b800test5/train_loss.tsv", "./plots/b50b800test5.png"),
+]
 
+Path("./plots").mkdir(parents=True, exist_ok=True)
 
-# load tsv
-df = pd.read_csv(tsv_path, sep='\t')
+for tsv_path, out_png in pairs:
+    # input
+    df = pd.read_csv(tsv_path, sep="\t")
 
-# check column
-print(df.head())
+    # column
+    cols = {c.lower(): c for c in df.columns}
+    step_col = cols.get("step")
+    loss_col = cols.get("loss")
+    if step_col is None or loss_col is None:
+        raise ValueError(f"{tsv_path} 缺少 step/loss 列")
 
-# draw
-plt.figure(figsize=(8, 5))
-plt.plot(df["step"], df["loss"], color="blue", linewidth=2)
+    # value
+    df = df[[step_col, loss_col]].dropna()
+    df[step_col] = pd.to_numeric(df[step_col], errors="coerce")
+    df[loss_col] = pd.to_numeric(df[loss_col], errors="coerce")
+    df = df.dropna()
 
-plt.title("Training Loss Curve (log scale)")
-plt.xlabel("Step")
-plt.ylabel("Loss (log scale)")
-
-#log y
-plt.yscale("log")   
-
-plt.grid(True, which="both", linestyle="--", alpha=0.6)
-
-plt.tight_layout()
-plt.savefig(out_file, dpi=300)
-print(f"plot is saved to: {out_file.resolve()}")
+    # plot
+    plt.figure(figsize=(8, 5))
+    plt.plot(df[step_col], df[loss_col], linewidth=2)
+    plt.title(f"{Path(tsv_path).parts[-2]} — Training Loss (log scale)")
+    plt.xlabel("Step")
+    plt.ylabel("Loss (log)")
+    plt.yscale("log")
+    plt.grid(True, which="both", linestyle="--", alpha=0.6)
+    plt.tight_layout()
+    plt.savefig(out_png, dpi=300)
+    plt.close()
+    print(f"saved: {out_png}")

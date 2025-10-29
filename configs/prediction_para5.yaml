@@ -1,0 +1,20 @@
+# model
+base_model: "runwayml/stable-diffusion-v1-5"
+
+# path
+lora_dir: "/workspace/experiments/b50b800test5"
+numeric_ckpt: "numeric_enc_final.pt"
+
+# data
+real_dir: "/workspace/val_data_cont"              #  *.txt + pic
+out_dir:  "/workspace/runs/eval/b50b800test5"        # output
+
+# parameters
+steps: 30
+guidance: 7.5
+
+# model
+# - dual  :  b50 ,b800（ cond_dim=2）
+# - single: only one（set key）
+mode: "dual"
+key:  "b50"     # single mode choose "b50" or "b800"

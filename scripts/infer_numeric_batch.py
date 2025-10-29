@@ -1,80 +1,116 @@
 # /workspace/scripts/infer_numeric_batch.py
-import os, glob, re, argparse
+import os, glob, re, argparse, yaml
 from PIL import Image
-import torch
 from tqdm import tqdm
+import torch
 from diffusers import StableDiffusionPipeline
 from numeric_encoder import NumericEncoder
 
-_NUM_RE = r"([-+]?\d[\d,]*(?:\.\d+)?(?:[eE][-+]?\d+)?)"  # 允许千分位和科学计数
+_NUM_RE = r"([-+]?\d[\d,]*(?:\.\d+)?(?:[eE][-+]?\d+)?)"  
+RE_B50  = re.compile(rf"signal_b50\s*=\s*{_NUM_RE}\s*[,;]?")
+RE_B800 = re.compile(rf"signal_b800\s*=\s*{_NUM_RE}\s*[,;]?")
 
-re_b50  = re.compile(r"signal_b50\s*=\s*([0-9.+-eE]+)")
-re_b800 = re.compile(r"signal_b800\s*=\s*([0-9.+-eE]+)")
-
-def _extract_num(text: str, key: str):
-    # 匹配如：signal_b50 = 24,166.9,   或 1.23e4; 末尾可有 , ;
-    m = re.search(rf"{key}\s*=\s*{_NUM_RE}\s*[,;]?", text)
-    if not m:
-        return None
+def _extract(m):
     s = m.group(1).rstrip(",;").replace(",", "")
+    return float(s)
+
+def parse_pair(text):
+    """return (b50, b800) or (None,None)"""
+    m1, m2 = RE_B50.search(text), RE_B800.search(text)
+    if not (m1 and m2): return None, None
     try:
-        return float(s)
+        return _extract(m1), _extract(m2)
     except ValueError:
-        return None
+        return None, None
 
-def parse_cond(text: str, key: str):
-    # 复用我们之前的健壮解析（去千分位/尾逗号）
-    import re, torch
-    _NUM_RE = r"([-+]?\d[\d,]*(?:\.\d+)?(?:[eE][-+]?\d+)?)"
-    m = re.search(rf"signal_{key}\s*=\s*{_NUM_RE}\s*[,;]?", text)
-    if not m: return None
-    s = m.group(1).rstrip(",;").replace(",", "")
-    try:
-        return torch.tensor([float(s)], dtype=torch.float32)  # shape [1]
-    except ValueError:
-        return None
+def load_cfg():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--config", required=True, help="YAML config path")
+    # overwrite
+    ap.add_argument("--out_dir", type=str)
+    ap.add_argument("--steps", type=int)
+    ap.add_argument("--guidance", type=float)
+    ap.add_argument("--mode", choices=["dual","single"])
+    ap.add_argument("--key", choices=["b50","b800"])
+    args = ap.parse_args()
+    with open(args.config, "r") as f:
+        cfg = yaml.safe_load(f)
+    for k in ["out_dir","steps","guidance","mode","key"]:
+        v = getattr(args, k, None)
+        if v is not None:
+            cfg[k] = v
+    return cfg
 
+def main():
+    cfg = load_cfg()
+    device = "cuda" if torch.cuda.is_available() else "cpu"
 
-def main(args):
-    device="cuda" if torch.cuda.is_available() else "cpu"
-    pipe = StableDiffusionPipeline.from_pretrained(args.base, torch_dtype=torch.float16).to(device)
-    pipe.load_lora_weights(args.lora_dir)
+    base_model = cfg["base_model"]
+    lora_dir   = cfg["lora_dir"]
+    numeric_ck = cfg.get("numeric_ckpt", "numeric_enc_final.pt")
+    real_dir   = cfg["real_dir"]
+    out_dir    = cfg["out_dir"]
+    steps      = int(cfg.get("steps", 30))
+    guidance   = float(cfg.get("guidance", 7.5))
+    mode       = cfg.get("mode", "dual")
+    key        = cfg.get("key", "b50")
 
-    # 恢复 numeric encoder
-    payload=torch.load(os.path.join(args.lora_dir, args.numeric_ckpt), map_location=device)
-    enc=NumericEncoder(seq_len=payload["seq_len"], hidden_size=pipe.text_encoder.config.hidden_size, cond_dim=payload["cond_dim"]).to(device)
+    os.makedirs(out_dir, exist_ok=True)
+
+    # pipe and LoRA
+    pipe = StableDiffusionPipeline.from_pretrained(base_model, torch_dtype=torch.float16).to(device)
+    pipe.load_lora_weights(lora_dir)
+
+    # numeric encoder（ckpt-cond_dim / seq_len）
+    payload = torch.load(os.path.join(lora_dir, numeric_ck), map_location=device)
+    cond_dim = int(payload["cond_dim"])
+    seq_len  = int(payload["seq_len"])
+
+    enc = NumericEncoder(seq_len=seq_len,
+                         hidden_size=pipe.text_encoder.config.hidden_size,
+                         cond_dim=cond_dim).to(device)
     enc.load_state_dict_light(payload)
     enc.eval()
 
-    os.makedirs(args.out_dir, exist_ok=True)
-    txts = sorted(glob.glob(os.path.join(args.real_dir, "*.txt")))
-    print("txt files:", len(txts))
+    # mode
+    if mode == "dual" and cond_dim != 2:
+        raise RuntimeError(f"Config asks for dual but ckpt cond_dim={cond_dim}.")
+    if mode == "single" and cond_dim != 1:
+        raise RuntimeError(f"Config asks for single but ckpt cond_dim={cond_dim}.")
+
+    txts = sorted(glob.glob(os.path.join(real_dir, "*.txt")))
+    print("txt files:", len(txts), "| mode:", mode, "| steps:", steps, "| guidance:", guidance)
 
     for t in tqdm(txts):
-        stem=os.path.splitext(os.path.basename(t))[0]
-        # 读取 sidecar 文本并解析 (b50, b800)
-        with open(t,"r",encoding="utf-8") as f: 
-            s=f.read().strip()
+        stem = os.path.splitext(os.path.basename(t))[0]
+        with open(t, "r", encoding="utf-8") as f:
+            s = f.read().strip()
 
-        cond = parse_cond(s, args.key)
-        if cond is None: continue
-        cond = cond.unsqueeze(0).to(device)  # [1,1]
+        #  cond
+        if mode == "dual":
+            b50, b800 = parse_pair(s)
+            if b50 is None:  
+                continue
+            cond = torch.tensor([[b50, b800]], dtype=torch.float32, device=device)   # [1,2]
+        else:  # single
+            b50, b800 = parse_pair(s)
+            if b50 is None:
+                continue
+            val = b50 if key == "b50" else b800
+            cond = torch.tensor([[val]], dtype=torch.float32, device=device)        # [1,1]
+
+        # gene
         with torch.no_grad():
-            pos = enc(cond).to(pipe.unet.dtype)
+            pos = enc(cond).to(pipe.unet.dtype)   # [1,L,768] -> half
             neg = enc.negative(1).to(pipe.unet.dtype)
-            img = pipe(prompt_embeds=pos, negative_prompt_embeds=neg,
-                    num_inference_steps=args.steps, guidance_scale=args.guidance).images[0]
+            img = pipe(
+                prompt_embeds=pos,
+                negative_prompt_embeds=neg,
+                num_inference_steps=steps,
+                guidance_scale=guidance
+            ).images[0]
 
-        img.save(os.path.join(args.out_dir, stem + ".png"))
+        img.save(os.path.join(out_dir, stem + ".png"))
 
 if __name__ == "__main__":
-    ap=argparse.ArgumentParser()
-    ap.add_argument("--base", default="runwayml/stable-diffusion-v1-5")
-    ap.add_argument("--lora_dir", required=True)      # 训练输出目录（含 LoRA + numeric_enc_*.pt）
-    ap.add_argument("--numeric_ckpt", default="numeric_enc_final.pt")
-    ap.add_argument("--real_dir", required=True)      # val_data_cont
-    ap.add_argument("--out_dir", required=True)
-    ap.add_argument("--steps", type=int, default=30)
-    ap.add_argument("--guidance", type=float, default=7.5)
-    ap.add_argument("--key", choices=["b50","b800"], required=True, help="which scalar to condition on")
-    args=ap.parse_args(); main(args)
+    main()

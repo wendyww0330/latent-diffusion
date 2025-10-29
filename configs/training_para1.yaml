@@ -1,0 +1,17 @@
+# model path
+model_name: "runwayml/stable-diffusion-v1-5"
+train_dir: "/workspace/train_data_cont"
+out_dir:   "/workspace/experiments/b50b800test1"
+
+# parameters
+batch_size: 8
+lr: 5e-5
+max_steps: 50000
+warmup: 200
+save_every: 500
+rank: 16
+seq_len: 16
+image_size: 512
+num_workers: 4
+log_every: 50
+seed: 123
