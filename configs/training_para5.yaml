@@ -5,7 +5,7 @@ out_dir:   "/workspace/experiments/b50b800test5"
 
 # parameters
 batch_size: 8
-lr: 5e-7
+lr: 1e-3
 max_steps: 50000
 warmup: 200
 save_every: 500
