@@ -1,5 +1,5 @@
-# based Python 3.8
-FROM python:3.8-slim-bullseye
+# based Pythrch
+FROM nvcr.io/nvidia/pytorch:23.02-py3
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONDONTWRITEBYTECODE=1 \
