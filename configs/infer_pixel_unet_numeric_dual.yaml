@@ -1,0 +1,37 @@
+# 模型 ckpt
+unet_ckpt: "/workspace/experiments/pixel_unet_numeric_more_steps/unet_final.pt"
+numeric_ckpt: "/workspace/experiments/pixel_unet_numeric_more_steps/numeric_enc_final.pt"
+
+# 必须与训练一致
+cond_dim: 2
+hidden_size: 768
+seq_len: 16
+
+unet:
+  sample_size: 256
+  in_channels: 1
+  out_channels: 1
+  down_block_types: ["DownBlock2D","DownBlock2D","DownBlock2D","DownBlock2D"]
+  up_block_types:   ["UpBlock2D","UpBlock2D","UpBlock2D","UpBlock2D"]
+  block_out_channels: [128, 128, 256, 256]
+  layers_per_block: 2
+  cross_attention_dim: 768
+  attention_head_dim: 8
+
+# 数据与输出
+real_dir: "/workspace/val_data_cont"
+out_dir:  "/workspace/runs/eval_pixel_dual_more_steps"
+image_size: 256
+
+# 采样
+steps: 30
+guidance: 7.5
+eta: 0.0
+batch_size: 1
+seed: 123
+
+scheduler:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: "scaled_linear"

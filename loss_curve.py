@@ -5,11 +5,7 @@ from pathlib import Path
 
 # pair
 pairs = [
-    ("./experiments/b50b800test1/train_loss.tsv", "./plots/b50b800test1.png"),
-    ("./experiments/b50b800test2/train_loss.tsv", "./plots/b50b800test2.png"),
-    ("./experiments/b50b800test3/train_loss.tsv", "./plots/b50b800test3.png"),
-    ("./experiments/b50b800test4/train_loss.tsv", "./plots/b50b800test4.png"),
-    ("./experiments/b50b800test5/train_loss.tsv", "./plots/b50b800test5.png"),
+    ("./experiments/pixel_unet_numeric_more_steps/train_loss.tsv", "./plots/scratch_more_steps.png"),
 ]
 
 Path("./plots").mkdir(parents=True, exist_ok=True)

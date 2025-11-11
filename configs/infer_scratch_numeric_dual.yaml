@@ -1,0 +1,42 @@
+# ========== 模型 ==========
+vae_name: "runwayml/stable-diffusion-v1-5"    # 复用 SD 的 VAE
+unet_ckpt: "/workspace/experiments/scratch_unet_numeric/unet_final.pt"
+numeric_ckpt: "/workspace/experiments/scratch_unet_numeric/numeric_enc_final.pt"
+
+# 跟训练时 UNet 的结构保持一致！！
+unet_arch:
+  sample_size: 64             # 与训练 YAML 一致
+  in_channels: 4
+  out_channels: 4
+  down_block_types: ["DownBlock2D","DownBlock2D","DownBlock2D","DownBlock2D"]
+  up_block_types:   ["UpBlock2D","UpBlock2D","UpBlock2D","UpBlock2D"]
+  block_out_channels: [256, 256, 512, 512]
+  layers_per_block: 2
+  cross_attention_dim: 768
+  attention_head_dim: 8
+
+# NumericEncoder 维度（与训练一致）
+cond_dim: 2         # 双变量
+hidden_size: 768
+seq_len: 16
+
+# ========== 数据 ==========
+real_dir: "/workspace/val_data_cont"          # 里面是 *.txt（包含 signal_b50 / signal_b800）
+out_dir:  "/workspace/runs/eval_scratch_dual" # 输出图片目录
+
+# ========== 采样 ==========
+steps: 30
+guidance: 7.5        # classifier-free guidance
+height: 512          # 输出分辨率（VAE 的下采样因子 8 → latent 尺寸=H/8,W/8）
+width:  512
+eta: 0.0             # DDIM eta
+
+# 调度器（用 DDIM；超参可与训练一致/相近）
+scheduler:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: "scaled_linear"
+
+seed: 123
+batch_size: 1        # 也支持 >1；按需要改

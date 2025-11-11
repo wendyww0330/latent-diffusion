@@ -1,0 +1,39 @@
+# 模型与组件
+vae_name: "runwayml/stable-diffusion-v1-5"   # 先复用 SD 的 VAE
+cond_dim: 2                                  # 1=单变量(b50 或 b800), 2=双变量(b50+b800)
+seq_len: 16
+hidden_size: 768                             # 对齐 SD 文本编码器维度
+
+# UNet 配置（可小型化以适应显存）
+unet:
+  sample_size: 64            # 64/128/256 先从 64 起步更稳
+  in_channels: 4
+  out_channels: 4
+  down_block_types: ["DownBlock2D","DownBlock2D","DownBlock2D","DownBlock2D"]
+  up_block_types:   ["UpBlock2D","UpBlock2D","UpBlock2D","UpBlock2D"]
+  block_out_channels: [256, 256, 512, 512]
+  layers_per_block: 2
+  cross_attention_dim: 768   # 要与 hidden_size 一致
+  attention_head_dim: 8
+
+# 训练数据与输出
+train_dir: "/workspace/train_data_cont"
+out_dir:   "/workspace/experiments/scratch_unet_numeric"
+
+# 超参
+image_size: 256              # VAE 输入图尺寸（会被VAE下采样）
+batch_size: 4
+lr: 1e-5
+max_steps: 20000
+warmup: 500
+save_every: 1000
+num_workers: 4
+log_every: 50
+seed: 123
+
+# 噪声与调度器
+scheduler:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: "scaled_linear"
