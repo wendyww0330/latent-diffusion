@@ -25,7 +25,7 @@ scheduler:
   beta_end: 0.012
   beta_schedule: scaled_linear
 
-batch_size: 4
+batch_size: 16
 num_workers: 4
 lr: 5e-5
 max_steps: 100000
