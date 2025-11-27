@@ -2,7 +2,7 @@
 train_dir: "./dataset_split/train"     # .txt + img
 out_dir:   "./experiments/train_ddpm"
 image_size: 256                             
-batch_size: 4
+batch_size: 16
 num_workers: 4
 seed: 123
 
