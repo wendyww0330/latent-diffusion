@@ -1,0 +1,35 @@
+out_dir: ./experiments/train_unet_with_vae
+train_dir: ./dataset_split/train          # training path
+image_size: 256                           # same as VAE 
+
+vae_repo: ./experiments/train_vae/final # ★  VAE  final 
+
+cond_dim: 3
+hidden_size: 768                          # = NumericEncoder.hidden_size
+seq_len: 16
+
+unet:
+  sample_size: 32                         # ★ = image_size // 8
+  in_channels: 1                          # ★ latent 1 channel
+  out_channels: 1                         # ★ noise 1 channel
+  down_block_types: ["DownBlock2D","DownBlock2D","DownBlock2D","DownBlock2D"]
+  up_block_types:   ["UpBlock2D","UpBlock2D","UpBlock2D","UpBlock2D"]
+  block_out_channels: [128, 256, 256, 256]
+  layers_per_block: 2
+  cross_attention_dim: 768                # ★ = hidden_size
+  attention_head_dim: 8
+
+scheduler:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: scaled_linear
+
+batch_size: 4
+num_workers: 4
+lr: 5e-5
+max_steps: 100000
+warmup: 1000
+save_every: 10000
+log_every: 50
+seed: 123
