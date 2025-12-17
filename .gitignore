@@ -34,3 +34,7 @@ datasets/
 *.7z
 *.npz
 *.npy
+
+# LoRA outputs
+lora_out_minimal/
+lora_out_rank16_10k/
