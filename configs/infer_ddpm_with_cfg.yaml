@@ -1,6 +1,6 @@
 # 模型 ckpt
-unet_ckpt: "/workspace/experiments/pixel_unet_numeric_more_steps/unet_final.pt"
-numeric_ckpt: "/workspace/experiments/pixel_unet_numeric_more_steps/numeric_enc_final.pt"
+unet_ckpt: "/workspace/experiments/pixel_unet_numeric_more_steps2/unet_step20000.pt"
+numeric_ckpt: "/workspace/experiments/pixel_unet_numeric_more_steps/numeric_enc_step20000.pt"
 
 # 必须与训练一致
 cond_dim: 2
@@ -20,7 +20,7 @@ unet:
 
 # 数据与输出
 real_dir: "/workspace/val_data_cont"
-out_dir:  "/workspace/runs/eval_pixel_dual_more_steps"
+out_dir:  "/workspace/runs/eval_pixel_dual_more_steps_20000"
 image_size: 256
 
 # 采样

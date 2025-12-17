@@ -1,0 +1,11 @@
+2025-12-15 15:17:36 | [VAE] Loaded from ./experiments/new_retry_train_vae/ckpt_step5000. scaling_factor=0.27
+2025-12-15 15:17:36 | [VAE] Loaded from ./experiments/new_retry_train_vae/ckpt_step5000. using SCALING_FACTOR = 0.27
+2025-12-15 15:17:36 | [UNet] Configured: in=4, out=4
+2025-12-15 15:17:36 | [DATA] N=1600 images
+2025-12-15 15:17:45 | [ENC] Set Norm: mean=[23945.297 12078.565], std=[ 730.63495 4146.7085 ]
+2025-12-15 15:17:45 | [ENC] Saved cond stats to experiments/new_retry_train_unet_with_vae/cond_mean.npy and cond_std.npy
+2025-12-15 15:17:45 | [Config] CFG Dropout Prob = 0.0
+2025-12-15 15:17:45 | [VAE] repo=./experiments/new_retry_train_vae/ckpt_step5000
+2025-12-15 15:17:45 | [VAE] scaling_factor=1.0
+2025-12-15 15:17:47 | [LATENTS raw] std=3.6853
+2025-12-15 15:17:47 | [LATENTS scaled] std=0.9950

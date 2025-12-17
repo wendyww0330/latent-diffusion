@@ -1,0 +1,89 @@
+2025-12-15 14:13:24 | [VAE] Loaded from ./experiments/new_retry_train_vae/ckpt_step5000. scaling_factor=0.27
+2025-12-15 14:13:24 | [VAE] Loaded from ./experiments/new_retry_train_vae/ckpt_step5000. using SCALING_FACTOR = 0.27
+2025-12-15 14:13:25 | [UNet] Configured: in=4, out=4
+2025-12-15 14:13:25 | [DATA] N=1600 images
+2025-12-15 14:13:34 | [ENC] Set Norm: mean=[23945.297 12078.565], std=[ 730.63495 4146.7085 ]
+2025-12-15 14:13:34 | [Config] CFG Dropout Prob = 0.1
+2025-12-15 14:13:34 | [VAE] repo=./experiments/new_retry_train_vae/ckpt_step5000
+2025-12-15 14:13:34 | [VAE] scaling_factor=1.0
+2025-12-15 14:13:36 | [LATENTS raw] std=3.6853
+2025-12-15 14:13:36 | [LATENTS scaled] std=0.9950
+2025-12-15 14:13:56 | [LATENTS] mean=0.3775 std=1.0980 min=-3.0709 max=2.8465
+2025-12-15 14:13:56 | [LATENTS raw] std=3.8049
+2025-12-15 14:13:56 | [LATENTS scaled] std=1.0273
+2025-12-15 14:14:17 | [LATENTS] mean=0.4136 std=1.0605 min=-3.4496 max=2.8817
+2025-12-15 14:14:17 | [LATENTS raw] std=3.7534
+2025-12-15 14:14:17 | [LATENTS scaled] std=1.0134
+2025-12-15 14:14:37 | [LATENTS] mean=0.4306 std=1.0313 min=-2.9557 max=2.9340
+2025-12-15 14:14:37 | [LATENTS raw] std=3.7060
+2025-12-15 14:14:37 | [LATENTS scaled] std=1.0006
+2025-12-15 14:14:57 | [LATENTS] mean=0.5075 std=1.0279 min=-3.1618 max=3.5794
+2025-12-15 14:14:58 | [LATENTS raw] std=3.8336
+2025-12-15 14:14:58 | [LATENTS scaled] std=1.0351
+2025-12-15 14:15:18 | [LATENTS] mean=0.4432 std=1.0379 min=-2.9687 max=3.4169
+2025-12-15 14:15:18 | Saved checkpoint at step 1000
+2025-12-15 14:15:18 | [LATENTS raw] std=3.6837
+2025-12-15 14:15:18 | [LATENTS scaled] std=0.9946
+2025-12-15 14:15:38 | [LATENTS] mean=0.4300 std=1.0187 min=-3.2114 max=3.0013
+2025-12-15 14:15:39 | [LATENTS raw] std=3.7609
+2025-12-15 14:15:39 | [LATENTS scaled] std=1.0154
+2025-12-15 14:15:59 | [LATENTS] mean=0.4269 std=1.0566 min=-3.0821 max=3.0587
+2025-12-15 14:15:59 | [LATENTS raw] std=3.8971
+2025-12-15 14:15:59 | [LATENTS scaled] std=1.0522
+2025-12-15 14:16:19 | [LATENTS] mean=0.4588 std=1.0422 min=-3.4035 max=3.4315
+2025-12-15 14:16:19 | [LATENTS raw] std=3.9432
+2025-12-15 14:16:19 | [LATENTS scaled] std=1.0647
+2025-12-15 14:16:39 | [LATENTS] mean=0.4558 std=1.0289 min=-2.8355 max=3.2514
+2025-12-15 14:16:39 | [LATENTS raw] std=3.9610
+2025-12-15 14:16:39 | [LATENTS scaled] std=1.0695
+2025-12-15 14:16:59 | [LATENTS] mean=0.4764 std=0.9765 min=-3.8157 max=3.0732
+2025-12-15 14:17:00 | Saved checkpoint at step 2000
+2025-12-15 14:17:00 | [LATENTS raw] std=3.6573
+2025-12-15 14:17:00 | [LATENTS scaled] std=0.9875
+2025-12-15 14:17:20 | [LATENTS] mean=0.4296 std=1.0128 min=-2.9960 max=3.0776
+2025-12-15 14:17:20 | [LATENTS raw] std=3.6967
+2025-12-15 14:17:20 | [LATENTS scaled] std=0.9981
+2025-12-15 14:17:40 | [LATENTS] mean=0.4628 std=1.0409 min=-3.3884 max=3.2169
+2025-12-15 14:17:41 | [LATENTS raw] std=3.7639
+2025-12-15 14:17:41 | [LATENTS scaled] std=1.0163
+2025-12-15 14:18:01 | [LATENTS] mean=0.4424 std=1.0313 min=-3.2229 max=2.9608
+2025-12-15 14:18:01 | [LATENTS raw] std=3.8567
+2025-12-15 14:18:01 | [LATENTS scaled] std=1.0413
+2025-12-15 14:18:21 | [LATENTS] mean=0.4733 std=1.0098 min=-3.1713 max=3.3054
+2025-12-15 14:18:21 | [LATENTS raw] std=3.7832
+2025-12-15 14:18:21 | [LATENTS scaled] std=1.0215
+2025-12-15 14:18:41 | [LATENTS] mean=0.4375 std=1.0443 min=-3.3012 max=3.3589
+2025-12-15 14:18:42 | Saved checkpoint at step 3000
+2025-12-15 14:18:42 | [LATENTS raw] std=3.7439
+2025-12-15 14:18:42 | [LATENTS scaled] std=1.0109
+2025-12-15 14:19:01 | [LATENTS] mean=0.4658 std=1.0232 min=-3.0659 max=3.1880
+2025-12-15 14:19:02 | [LATENTS raw] std=3.8687
+2025-12-15 14:19:02 | [LATENTS scaled] std=1.0445
+2025-12-15 14:19:22 | [LATENTS] mean=0.4428 std=1.0392 min=-2.8936 max=3.3026
+2025-12-15 14:19:22 | [LATENTS raw] std=3.7759
+2025-12-15 14:19:22 | [LATENTS scaled] std=1.0195
+2025-12-15 14:19:42 | [LATENTS] mean=0.4402 std=1.0125 min=-2.8008 max=2.9725
+2025-12-15 14:19:43 | [LATENTS raw] std=3.8592
+2025-12-15 14:19:43 | [LATENTS scaled] std=1.0420
+2025-12-15 14:20:03 | [LATENTS] mean=0.4775 std=0.9750 min=-3.4519 max=3.1973
+2025-12-15 14:20:03 | [LATENTS raw] std=4.0711
+2025-12-15 14:20:03 | [LATENTS scaled] std=1.0992
+2025-12-15 14:20:23 | [LATENTS] mean=0.4751 std=1.0085 min=-2.9076 max=3.3652
+2025-12-15 14:20:23 | Saved checkpoint at step 4000
+2025-12-15 14:20:23 | [LATENTS raw] std=3.7563
+2025-12-15 14:20:23 | [LATENTS scaled] std=1.0142
+2025-12-15 14:20:44 | [LATENTS] mean=0.4032 std=1.0545 min=-2.7931 max=2.7963
+2025-12-15 14:20:44 | [LATENTS raw] std=3.7580
+2025-12-15 14:20:44 | [LATENTS scaled] std=1.0146
+2025-12-15 14:21:04 | [LATENTS] mean=0.4527 std=1.0272 min=-2.8953 max=3.4508
+2025-12-15 14:21:04 | [LATENTS raw] std=3.7785
+2025-12-15 14:21:04 | [LATENTS scaled] std=1.0202
+2025-12-15 14:21:24 | [LATENTS] mean=0.4200 std=1.0406 min=-2.9392 max=3.1752
+2025-12-15 14:21:24 | [LATENTS raw] std=3.9730
+2025-12-15 14:21:24 | [LATENTS scaled] std=1.0727
+2025-12-15 14:21:44 | [LATENTS] mean=0.4593 std=1.0020 min=-3.2798 max=3.2689
+2025-12-15 14:21:44 | [LATENTS raw] std=3.8456
+2025-12-15 14:21:44 | [LATENTS scaled] std=1.0383
+2025-12-15 14:22:05 | [LATENTS] mean=0.4749 std=0.9916 min=-3.2341 max=3.3248
+2025-12-15 14:22:05 | Saved checkpoint at step 5000
+2025-12-15 14:22:05 | Training Finished. Saved final models.

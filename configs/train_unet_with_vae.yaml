@@ -1,0 +1,38 @@
+# configs/ldm_gray_numeric.yaml
+out_dir: ./experiments/new_retry_train_unet_with_vae
+train_dir: ./train_data_cont
+image_size: 256
+
+cond_dim: 2
+hidden_size: 768
+seq_len: 16
+
+vae_repo: ./experiments/new_retry_train_vae/ckpt_step5000   # 你自己训练的灰度VAE(1ch)路径
+
+unet:
+  sample_size: 32             # = image_size // 8
+  in_channels: 4
+  out_channels: 4
+  down_block_types: ["DownBlock2D","DownBlock2D","DownBlock2D","DownBlock2D"]
+  up_block_types:   ["UpBlock2D","UpBlock2D","UpBlock2D","UpBlock2D"]
+  block_out_channels: [128, 256, 256, 256]   # 起步稳妥，省显存
+  layers_per_block: 2
+  cross_attention_dim: 768
+  attention_head_dim: 8
+
+scheduler:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: scaled_linear
+  
+scaling_factor: 0.27
+
+batch_size: 4
+num_workers: 4
+lr: 1.0e-5
+max_steps: 5000
+warmup: 1000
+save_every: 1000
+log_every: 50
+seed: 123

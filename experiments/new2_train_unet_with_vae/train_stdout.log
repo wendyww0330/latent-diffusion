@@ -1,0 +1,36 @@
+2025-12-12 09:49:15 | [VAE] Loaded from ./experiments/new2_train_vae/final. using SCALING_FACTOR = 0.18215
+2025-12-12 09:49:15 | [UNet] Configured: in=4, out=4
+2025-12-12 09:49:16 | [DATA] N=1600 images
+2025-12-12 09:49:28 | [ENC] Set Norm: mean=[23945.297 12078.565], std=[ 730.63495 4146.7085 ]
+2025-12-12 09:49:28 | [Config] CFG Dropout Prob = 0.1
+2025-12-12 09:51:13 | Saved checkpoint at step 1000
+2025-12-12 09:52:54 | Saved checkpoint at step 2000
+2025-12-12 09:54:35 | Saved checkpoint at step 3000
+2025-12-12 09:56:15 | Saved checkpoint at step 4000
+2025-12-12 09:57:56 | Saved checkpoint at step 5000
+2025-12-12 09:59:36 | Saved checkpoint at step 6000
+2025-12-12 10:01:17 | Saved checkpoint at step 7000
+2025-12-12 10:02:58 | Saved checkpoint at step 8000
+2025-12-12 10:04:39 | Saved checkpoint at step 9000
+2025-12-12 10:06:20 | Saved checkpoint at step 10000
+2025-12-12 10:08:01 | Saved checkpoint at step 11000
+2025-12-12 10:09:42 | Saved checkpoint at step 12000
+2025-12-12 10:11:23 | Saved checkpoint at step 13000
+2025-12-12 10:13:04 | Saved checkpoint at step 14000
+2025-12-12 10:14:46 | Saved checkpoint at step 15000
+2025-12-12 10:16:27 | Saved checkpoint at step 16000
+2025-12-12 10:18:08 | Saved checkpoint at step 17000
+2025-12-12 10:19:49 | Saved checkpoint at step 18000
+2025-12-12 10:21:31 | Saved checkpoint at step 19000
+2025-12-12 10:23:11 | Saved checkpoint at step 20000
+2025-12-12 10:24:52 | Saved checkpoint at step 21000
+2025-12-12 10:26:33 | Saved checkpoint at step 22000
+2025-12-12 10:28:14 | Saved checkpoint at step 23000
+2025-12-12 10:29:55 | Saved checkpoint at step 24000
+2025-12-12 10:31:36 | Saved checkpoint at step 25000
+2025-12-12 10:33:17 | Saved checkpoint at step 26000
+2025-12-12 10:34:58 | Saved checkpoint at step 27000
+2025-12-12 10:36:39 | Saved checkpoint at step 28000
+2025-12-12 10:38:20 | Saved checkpoint at step 29000
+2025-12-12 10:40:01 | Saved checkpoint at step 30000
+2025-12-12 10:40:02 | Training Finished. Saved final models.

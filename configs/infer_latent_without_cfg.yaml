@@ -1,0 +1,38 @@
+# /workspace/configs/eval_ldm_gray_numeric.yaml
+
+# ========== 模型（1通道 latent LDM） ==========
+vae_repo: "/workspace/experiments/new2_train_vae/final"
+unet_ckpt: "/workspace/experiments/new2_train_unet_with_vae/unet_final.pt"
+numeric_ckpt: "/workspace/experiments/new2_train_unet_with_vae/numeric_enc_final.pt"
+
+unet_arch:
+  sample_size: 32
+  in_channels: 4
+  out_channels: 4
+  down_block_types: ["DownBlock2D","DownBlock2D","DownBlock2D","DownBlock2D"]
+  up_block_types:   ["UpBlock2D","UpBlock2D","UpBlock2D","UpBlock2D"]
+  block_out_channels: [128, 256, 256, 256]
+  layers_per_block: 2
+  cross_attention_dim: 768
+  attention_head_dim: 8
+
+cond_dim: 2
+hidden_size: 768
+seq_len: 16
+
+real_dir: "/workspace/val_data_cont"
+out_dir:  "/workspace/runs/newtestttt_infer_latent_without_cfg"
+
+steps: 30
+height: 256
+width:  256
+eta: 0.0
+
+scheduler:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: "scaled_linear"
+
+seed: 123
+batch_size: 1

@@ -1,0 +1,42 @@
+# /workspace/configs/eval_ldm_gray_numeric.yaml
+
+# ========== 模型（1通道 latent LDM） ==========
+vae_repo: "/workspace/experiments/new_retry_train_vae/ckpt_step5000"
+unet_ckpt: "/workspace/experiments/backup_new_retry_train_unet_with_vae/unet_step5000.pt"
+numeric_ckpt: "/workspace/experiments/backup_new_retry_train_unet_with_vae/numeric_enc_step5000.pt"
+cond_mean_path: "/workspace/experiments/new_retry_train_unet_with_vae/cond_mean.npy"
+cond_std_path:  "/workspace/experiments/new_retry_train_unet_with_vae/cond_std.npy"
+latent_mean_path: "/workspace/experiments/new_retry_train_unet_with_vae/latent_mean.npy"
+
+unet_arch:
+  sample_size: 32
+  in_channels: 4
+  out_channels: 4
+  down_block_types: ["DownBlock2D","DownBlock2D","DownBlock2D","DownBlock2D"]
+  up_block_types:   ["UpBlock2D","UpBlock2D","UpBlock2D","UpBlock2D"]
+  block_out_channels: [128, 256, 256, 256]
+  layers_per_block: 2
+  cross_attention_dim: 768
+  attention_head_dim: 8
+
+cond_dim: 2
+hidden_size: 768
+seq_len: 16
+
+real_dir: "/workspace/test_data_cont"
+out_dir:  "/workspace/runs/new_retry_infer_latent_without_cfg"
+
+steps: 100
+guidance: 1.0     # ★ CFG 强度：1.0 = 关；2~5 之间可以试一试
+height: 256
+width:  256
+eta: 0.0
+scaling_factor: 0.27
+scheduler:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: "scaled_linear"
+
+seed: 123
+batch_size: 1
