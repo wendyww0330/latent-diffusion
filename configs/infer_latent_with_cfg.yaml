@@ -4,8 +4,8 @@
 vae_repo: "/workspace/experiments/new_retry_train_vae/ckpt_step5000"
 cond_mean_path: ./experiments/new_retry_sample_loss_train_unet_with_vae/cond_mean.npy
 cond_std_path:  ./experiments/new_retry_sample_loss_train_unet_with_vae/cond_std.npy
-unet_ckpt: ./experiments/new_retry_sample_loss_train_unet_with_vae/unet_step1000.pt   # 先用800步这一版
-numeric_ckpt: ./experiments/new_retry_sample_loss_train_unet_with_vae/numeric_enc_step1000.pt
+unet_ckpt: ./experiments/latent_train_unet_with_vae_withoutcfg_withoutdropout/unet_final.pt   # 先用800步这一版
+numeric_ckpt: ./experiments/latent_train_unet_with_vae_withoutcfg_withoutdropout/numeric_enc_final.pt
 latent_mean_path: ./experiments/new_retry_sample_loss_train_unet_with_vae/latent_mean.npy
 
 unet_arch:
@@ -28,10 +28,10 @@ prediction_type: sample
 binarize: false                # 先关，先看灰度输出是否结构正确
 binarize_threshold: 0.5
 real_dir: "/workspace/test_data_cont"
-out_dir:  "/workspace/runs/new_retry_sample_loss_infer_latent_without_cfg"
+out_dir:  "/workspace/runs/latent_train_unet_with_vae_withcfg_withoutdropout"
 
 steps: 50
-guidance: 1.0     # ★ CFG 强度：1.0 = 关；2~5 之间可以试一试
+guidance: 3.0     # ★ CFG 强度：1.0 = 关；2~5 之间可以试一试
 height: 256
 width:  256
 eta: 0.0

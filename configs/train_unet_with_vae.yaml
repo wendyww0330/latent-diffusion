@@ -1,5 +1,5 @@
 # configs/ldm_gray_numeric.yaml
-out_dir: ./experiments/new_retry_sample_loss_train_unet_with_vae
+out_dir: ./experiments/latent_train_unet_with_vae_withoutcfg_withdropout
 train_dir: ./train_data_cont
 image_size: 256
 
@@ -29,14 +29,14 @@ scheduler:
 prediction_type: sample   # 可选: epsilon / sample / v_prediction
 weight_decay: 1.0e-2
 scaling_factor: 0.27
-cond_dropout_prob: 0.0
+cond_dropout_prob: 0.1
 overfit_one_batch: true
 
 batch_size: 4
 num_workers: 4
 lr: 1.0e-5
-max_steps: 5000
+max_steps: 20000
 warmup: 1000
-save_every: 1000
+save_every: 4000
 log_every: 50
 seed: 123

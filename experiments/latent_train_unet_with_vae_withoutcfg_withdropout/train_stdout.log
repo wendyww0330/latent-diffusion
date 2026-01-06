@@ -1,0 +1,121 @@
+2025-12-30 11:36:55 | [Config] image_size=256 batch_size=4 num_workers=4
+2025-12-30 11:36:55 | [Config] lr(fixed)=1e-05 weight_decay=0.01 max_steps=20000
+2025-12-30 11:36:55 | [Config] cond_dropout_prob=0.1
+2025-12-30 11:36:55 | [Config] scaling_factor(yaml)=0.27
+2025-12-30 11:36:55 | [Config] prediction_type(yaml)=sample
+2025-12-30 11:36:56 | [VAE] Loaded from ./experiments/new_retry_train_vae/ckpt_step5000 (frozen)
+2025-12-30 11:36:56 | [UNet] Configured: in=4, out=4
+2025-12-30 11:36:56 | [ENC] NumericEncoder: cond_dim=2, hidden=768, seq_len=16
+2025-12-30 11:36:56 | [Scheduler] num_train_timesteps=1000 prediction_type=sample
+2025-12-30 11:36:56 | [DATA] N=1600 images from ./train_data_cont
+2025-12-30 11:36:56 | [DATA] Calculating cond mean/std (up to 2000 samples)...
+2025-12-30 11:37:06 | [ENC] Set Norm: mean=[23945.297 12078.565], std=[ 730.63495 4146.7085 ]
+2025-12-30 11:37:06 | [ENC] Saved cond stats to experiments/latent_train_unet_with_vae_withoutcfg_withdropout/cond_mean.npy and experiments/latent_train_unet_with_vae_withoutcfg_withdropout/cond_std.npy
+2025-12-30 11:37:06 | [OPT] Using fixed learning rate (no scheduler).
+2025-12-30 11:37:14 | [LATENTS] Saved latent_mean=0.528033 to experiments/latent_train_unet_with_vae_withoutcfg_withdropout/latent_mean.npy
+2025-12-30 11:37:30 | [LATENTS] mean=0.5280 std=0.9949 min=-3.0886 max=3.2579
+2025-12-30 11:37:51 | [LATENTS] mean=0.5276 std=0.9950 min=-3.0898 max=3.2585
+2025-12-30 11:38:12 | [LATENTS] mean=0.5278 std=0.9950 min=-3.0903 max=3.2568
+2025-12-30 11:38:33 | [LATENTS] mean=0.5280 std=0.9950 min=-3.0887 max=3.2571
+2025-12-30 11:38:54 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0896 max=3.2566
+2025-12-30 11:39:15 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0899 max=3.2564
+2025-12-30 11:39:37 | [LATENTS] mean=0.5280 std=0.9950 min=-3.0913 max=3.2573
+2025-12-30 11:39:58 | [LATENTS] mean=0.5283 std=0.9951 min=-3.0898 max=3.2579
+2025-12-30 11:40:19 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0903 max=3.2581
+2025-12-30 11:40:40 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0899 max=3.2574
+2025-12-30 11:41:01 | [LATENTS] mean=0.5276 std=0.9951 min=-3.0882 max=3.2573
+2025-12-30 11:41:22 | [LATENTS] mean=0.5278 std=0.9950 min=-3.0900 max=3.2575
+2025-12-30 11:41:43 | [LATENTS] mean=0.5283 std=0.9950 min=-3.0896 max=3.2569
+2025-12-30 11:42:03 | [LATENTS] mean=0.5275 std=0.9950 min=-3.0911 max=3.2576
+2025-12-30 11:42:24 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0896 max=3.2565
+2025-12-30 11:42:45 | [LATENTS] mean=0.5279 std=0.9951 min=-3.0902 max=3.2574
+2025-12-30 11:43:07 | [LATENTS] mean=0.5279 std=0.9949 min=-3.0890 max=3.2577
+2025-12-30 11:43:27 | [LATENTS] mean=0.5281 std=0.9950 min=-3.0890 max=3.2580
+2025-12-30 11:43:49 | [LATENTS] mean=0.5278 std=0.9951 min=-3.0908 max=3.2569
+2025-12-30 11:44:10 | [LATENTS] mean=0.5277 std=0.9951 min=-3.0890 max=3.2565
+2025-12-30 11:44:10 | [CKPT] Saved checkpoint at step 4000
+2025-12-30 11:44:31 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0893 max=3.2570
+2025-12-30 11:44:51 | [LATENTS] mean=0.5280 std=0.9950 min=-3.0886 max=3.2574
+2025-12-30 11:45:13 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0890 max=3.2562
+2025-12-30 11:45:34 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0893 max=3.2577
+2025-12-30 11:45:55 | [LATENTS] mean=0.5280 std=0.9950 min=-3.0900 max=3.2571
+2025-12-30 11:46:15 | [LATENTS] mean=0.5280 std=0.9950 min=-3.0900 max=3.2573
+2025-12-30 11:46:36 | [LATENTS] mean=0.5276 std=0.9952 min=-3.0898 max=3.2571
+2025-12-30 11:46:58 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0889 max=3.2566
+2025-12-30 11:47:19 | [LATENTS] mean=0.5281 std=0.9950 min=-3.0909 max=3.2575
+2025-12-30 11:47:40 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0899 max=3.2576
+2025-12-30 11:48:02 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0891 max=3.2573
+2025-12-30 11:48:23 | [LATENTS] mean=0.5277 std=0.9951 min=-3.0901 max=3.2571
+2025-12-30 11:48:44 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0899 max=3.2567
+2025-12-30 11:49:05 | [LATENTS] mean=0.5277 std=0.9952 min=-3.0919 max=3.2573
+2025-12-30 11:49:26 | [LATENTS] mean=0.5279 std=0.9951 min=-3.0903 max=3.2584
+2025-12-30 11:49:47 | [LATENTS] mean=0.5278 std=0.9950 min=-3.0902 max=3.2571
+2025-12-30 11:50:09 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0896 max=3.2583
+2025-12-30 11:50:30 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0906 max=3.2565
+2025-12-30 11:50:51 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0886 max=3.2556
+2025-12-30 11:51:12 | [LATENTS] mean=0.5276 std=0.9951 min=-3.0889 max=3.2576
+2025-12-30 11:51:12 | [CKPT] Saved checkpoint at step 8000
+2025-12-30 11:51:33 | [LATENTS] mean=0.5282 std=0.9950 min=-3.0895 max=3.2576
+2025-12-30 11:51:54 | [LATENTS] mean=0.5279 std=0.9951 min=-3.0900 max=3.2578
+2025-12-30 11:52:15 | [LATENTS] mean=0.5280 std=0.9951 min=-3.0903 max=3.2577
+2025-12-30 11:52:35 | [LATENTS] mean=0.5281 std=0.9950 min=-3.0901 max=3.2583
+2025-12-30 11:52:56 | [LATENTS] mean=0.5276 std=0.9950 min=-3.0890 max=3.2565
+2025-12-30 11:53:17 | [LATENTS] mean=0.5283 std=0.9950 min=-3.0890 max=3.2588
+2025-12-30 11:53:37 | [LATENTS] mean=0.5279 std=0.9951 min=-3.0903 max=3.2561
+2025-12-30 11:53:58 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0901 max=3.2575
+2025-12-30 11:54:19 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0909 max=3.2582
+2025-12-30 11:54:39 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0882 max=3.2574
+2025-12-30 11:55:00 | [LATENTS] mean=0.5281 std=0.9951 min=-3.0911 max=3.2572
+2025-12-30 11:55:20 | [LATENTS] mean=0.5283 std=0.9950 min=-3.0898 max=3.2571
+2025-12-30 11:55:41 | [LATENTS] mean=0.5278 std=0.9951 min=-3.0893 max=3.2571
+2025-12-30 11:56:01 | [LATENTS] mean=0.5278 std=0.9951 min=-3.0921 max=3.2581
+2025-12-30 11:56:22 | [LATENTS] mean=0.5279 std=0.9951 min=-3.0896 max=3.2566
+2025-12-30 11:56:43 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0918 max=3.2570
+2025-12-30 11:57:04 | [LATENTS] mean=0.5279 std=0.9951 min=-3.0893 max=3.2563
+2025-12-30 11:57:24 | [LATENTS] mean=0.5279 std=0.9951 min=-3.0891 max=3.2570
+2025-12-30 11:57:45 | [LATENTS] mean=0.5278 std=0.9951 min=-3.0895 max=3.2571
+2025-12-30 11:58:06 | [LATENTS] mean=0.5278 std=0.9950 min=-3.0892 max=3.2573
+2025-12-30 11:58:06 | [CKPT] Saved checkpoint at step 12000
+2025-12-30 11:58:27 | [LATENTS] mean=0.5281 std=0.9951 min=-3.0908 max=3.2558
+2025-12-30 11:58:48 | [LATENTS] mean=0.5278 std=0.9950 min=-3.0895 max=3.2568
+2025-12-30 11:59:09 | [LATENTS] mean=0.5276 std=0.9951 min=-3.0899 max=3.2577
+2025-12-30 11:59:29 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0899 max=3.2567
+2025-12-30 11:59:50 | [LATENTS] mean=0.5279 std=0.9951 min=-3.0889 max=3.2573
+2025-12-30 12:00:11 | [LATENTS] mean=0.5284 std=0.9950 min=-3.0894 max=3.2575
+2025-12-30 12:00:31 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0901 max=3.2573
+2025-12-30 12:00:52 | [LATENTS] mean=0.5279 std=0.9952 min=-3.0905 max=3.2568
+2025-12-30 12:01:13 | [LATENTS] mean=0.5278 std=0.9951 min=-3.0906 max=3.2592
+2025-12-30 12:01:33 | [LATENTS] mean=0.5281 std=0.9950 min=-3.0885 max=3.2575
+2025-12-30 12:01:54 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0892 max=3.2571
+2025-12-30 12:02:15 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0897 max=3.2580
+2025-12-30 12:02:36 | [LATENTS] mean=0.5278 std=0.9950 min=-3.0908 max=3.2580
+2025-12-30 12:02:57 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0897 max=3.2575
+2025-12-30 12:03:18 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0888 max=3.2574
+2025-12-30 12:03:38 | [LATENTS] mean=0.5276 std=0.9949 min=-3.0911 max=3.2569
+2025-12-30 12:03:58 | [LATENTS] mean=0.5275 std=0.9950 min=-3.0898 max=3.2569
+2025-12-30 12:04:18 | [LATENTS] mean=0.5283 std=0.9951 min=-3.0881 max=3.2570
+2025-12-30 12:04:40 | [LATENTS] mean=0.5278 std=0.9951 min=-3.0898 max=3.2564
+2025-12-30 12:05:01 | [LATENTS] mean=0.5283 std=0.9950 min=-3.0896 max=3.2566
+2025-12-30 12:05:01 | [CKPT] Saved checkpoint at step 16000
+2025-12-30 12:05:23 | [LATENTS] mean=0.5278 std=0.9950 min=-3.0895 max=3.2576
+2025-12-30 12:05:43 | [LATENTS] mean=0.5277 std=0.9950 min=-3.0888 max=3.2570
+2025-12-30 12:06:05 | [LATENTS] mean=0.5278 std=0.9950 min=-3.0890 max=3.2576
+2025-12-30 12:06:26 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0912 max=3.2572
+2025-12-30 12:06:47 | [LATENTS] mean=0.5281 std=0.9951 min=-3.0891 max=3.2566
+2025-12-30 12:07:08 | [LATENTS] mean=0.5279 std=0.9951 min=-3.0911 max=3.2568
+2025-12-30 12:07:30 | [LATENTS] mean=0.5281 std=0.9950 min=-3.0905 max=3.2561
+2025-12-30 12:07:50 | [LATENTS] mean=0.5280 std=0.9951 min=-3.0901 max=3.2582
+2025-12-30 12:08:10 | [LATENTS] mean=0.5278 std=0.9950 min=-3.0906 max=3.2577
+2025-12-30 12:08:29 | [LATENTS] mean=0.5276 std=0.9950 min=-3.0911 max=3.2560
+2025-12-30 12:08:49 | [LATENTS] mean=0.5274 std=0.9951 min=-3.0897 max=3.2575
+2025-12-30 12:09:09 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0911 max=3.2569
+2025-12-30 12:09:29 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0885 max=3.2566
+2025-12-30 12:09:51 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0905 max=3.2574
+2025-12-30 12:10:12 | [LATENTS] mean=0.5281 std=0.9951 min=-3.0893 max=3.2577
+2025-12-30 12:10:33 | [LATENTS] mean=0.5276 std=0.9950 min=-3.0907 max=3.2566
+2025-12-30 12:10:54 | [LATENTS] mean=0.5280 std=0.9951 min=-3.0900 max=3.2564
+2025-12-30 12:11:16 | [LATENTS] mean=0.5281 std=0.9951 min=-3.0898 max=3.2583
+2025-12-30 12:11:37 | [LATENTS] mean=0.5279 std=0.9950 min=-3.0899 max=3.2570
+2025-12-30 12:11:58 | [LATENTS] mean=0.5278 std=0.9951 min=-3.0890 max=3.2571
+2025-12-30 12:11:58 | [CKPT] Saved checkpoint at step 20000
+2025-12-30 12:11:58 | [DONE] Training finished. Saved final models.
