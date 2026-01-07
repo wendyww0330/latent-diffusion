@@ -10,3 +10,31 @@ models/ldm/text2img-large/model.ckpt
 *.npz
 *.bin
 *.zip
+*.safetensors
+*.onnx
+*.tflite
+
+# ---- caches / env ----
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+.DS_Store
+
+# ---- datasets / big artifacts ----
+data/
+datasets/
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.npz
+*.npy
+
+# LoRA outputs
+lora_out_minimal/
+lora_out_rank16_10k/

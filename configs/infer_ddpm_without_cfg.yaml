@@ -1,6 +1,6 @@
 # ========== 模型 ckpt ==========
-unet_ckpt: "./experiments/train_ddpm/unet_final.pt"
-numeric_ckpt: "./experiments/train_ddpm/numeric_enc_final.pt"
+unet_ckpt: "/workspace/latent-v2/experiments/train_ddpm/unet_final.pt"
+numeric_ckpt: "/workspace/latent-v2/experiments/train_ddpm/numeric_enc_final.pt"
 
 # 必须与训练时一致
 cond_dim: 3
@@ -19,8 +19,8 @@ unet:
   attention_head_dim: 8
 
 # ========== 数据与输出 ==========
-real_dir: "./dataset_split/test"        # sidecar .txt with signal_b50 / signal_b800
-out_dir:  "./runs/ddpm_without_cfg"
+real_dir: "/workspace/latent-v2/dataset_split/test"        # sidecar .txt with signal_b50 / signal_b800
+out_dir:  "/workspace/latent-v2/runs/ddpm_without_cfg"
 image_size: 256
 
 # ========== 采样（无 CFG） ==========
