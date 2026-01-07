@@ -1,0 +1,37 @@
+2026-01-06 15:02:05 | [Config] image_size=256 batch_size=4 num_workers=4
+2026-01-06 15:02:05 | [Config] lr(fixed)=1e-05 weight_decay=0.01 max_steps=4000
+2026-01-06 15:02:05 | [Config] cond_dropout_prob=0.0
+2026-01-06 15:02:05 | [Config] scaling_factor(yaml)=0.27
+2026-01-06 15:02:05 | [Config] prediction_type(yaml)=sample
+2026-01-06 15:02:12 | [VAE] Loaded from ./experiments/new_retry_train_vae/ckpt_step5000 (frozen)
+2026-01-06 15:02:13 | [UNet] Configured: in=4, out=4
+2026-01-06 15:02:13 | [ENC] NumericEncoder: cond_dim=2, hidden=768, seq_len=16
+2026-01-06 15:02:13 | [Scheduler] num_train_timesteps=1000 prediction_type=sample
+2026-01-06 15:02:13 | [DATA] N=1600 images from ./train_data_cont
+2026-01-06 15:02:13 | [DATA] Calculating cond mean/std (up to 2000 samples)...
+2026-01-06 15:03:40 | [ENC] Set Norm: mean=[23945.297 12078.565], std=[ 730.63495 4146.7085 ]
+2026-01-06 15:03:40 | [ENC] Saved cond stats to experiments/latent_train_unet_new_arch/cond_mean.npy and experiments/latent_train_unet_new_arch/cond_std.npy
+2026-01-06 15:03:40 | [OPT] Using fixed learning rate (no scheduler).
+2026-01-06 15:04:15 | [LATENTS] Saved latent_mean=0.470058 to experiments/latent_train_unet_new_arch/latent_mean.npy
+2026-01-06 15:04:59 | [LATENTS] mean=0.4695 std=1.0231 min=-3.0253 max=3.0744
+2026-01-06 15:05:57 | [LATENTS] mean=0.4699 std=1.0231 min=-3.0259 max=3.0730
+2026-01-06 15:06:56 | [LATENTS] mean=0.4696 std=1.0231 min=-3.0259 max=3.0735
+2026-01-06 15:07:55 | [LATENTS] mean=0.4697 std=1.0231 min=-3.0257 max=3.0735
+2026-01-06 15:08:54 | [LATENTS] mean=0.4698 std=1.0231 min=-3.0261 max=3.0747
+2026-01-06 15:09:56 | [LATENTS] mean=0.4695 std=1.0231 min=-3.0255 max=3.0741
+2026-01-06 15:10:59 | [LATENTS] mean=0.4696 std=1.0231 min=-3.0262 max=3.0738
+2026-01-06 15:11:58 | [LATENTS] mean=0.4696 std=1.0230 min=-3.0258 max=3.0742
+2026-01-06 15:13:00 | [LATENTS] mean=0.4695 std=1.0231 min=-3.0259 max=3.0737
+2026-01-06 15:14:02 | [LATENTS] mean=0.4697 std=1.0231 min=-3.0258 max=3.0741
+2026-01-06 15:15:02 | [LATENTS] mean=0.4695 std=1.0231 min=-3.0257 max=3.0736
+2026-01-06 15:16:01 | [LATENTS] mean=0.4697 std=1.0231 min=-3.0261 max=3.0736
+2026-01-06 15:17:02 | [LATENTS] mean=0.4695 std=1.0231 min=-3.0255 max=3.0736
+2026-01-06 15:18:00 | [LATENTS] mean=0.4696 std=1.0231 min=-3.0256 max=3.0742
+2026-01-06 15:19:01 | [LATENTS] mean=0.4695 std=1.0230 min=-3.0256 max=3.0740
+2026-01-06 15:20:00 | [LATENTS] mean=0.4695 std=1.0232 min=-3.0259 max=3.0736
+2026-01-06 15:20:58 | [LATENTS] mean=0.4695 std=1.0231 min=-3.0259 max=3.0743
+2026-01-06 15:21:58 | [LATENTS] mean=0.4695 std=1.0230 min=-3.0258 max=3.0737
+2026-01-06 15:23:02 | [LATENTS] mean=0.4697 std=1.0231 min=-3.0260 max=3.0741
+2026-01-06 15:24:02 | [LATENTS] mean=0.4697 std=1.0231 min=-3.0258 max=3.0739
+2026-01-06 15:24:02 | [CKPT] Saved checkpoint at step 4000
+2026-01-06 15:24:03 | [DONE] Training finished. Saved final models.

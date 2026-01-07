@@ -5,9 +5,9 @@ from PIL import Image
 import pandas as pd
 
 # input folder
-IMG_DIR = r"./runs/eval_pixel_dual_more_steps"   
+IMG_DIR = r"./runs/latent_train_unet_with_vae_withoutcfg_withoutdropout"   
 # result path
-OUT_XLSX = r"./eval_pixel_dual_more_steps.xlsx"
+OUT_XLSX = r"./latent_train_unet_with_vae_withoutcfg_withoutdropout.xlsx"
 
 # method 1 threshold
 USE_THRESHOLD = True

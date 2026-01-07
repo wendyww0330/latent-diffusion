@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # para
-pixel_csv = "./eval_pixel_dual_more_steps.csv"      # out path
+pixel_csv = "./latent_train_unet_with_vae_withoutcfg_withoutdropout.csv"      # out path
 signal_csv = "modified_signals_summary.csv"    #  b50/b800  file
 out_dir = Path("./plots")           # output folder
 out_dir.mkdir(exist_ok=True)        # create a new one
-out_file = out_dir / "pixel_dual_more_steps.png"
+out_file = out_dir / "latent_train_unet_with_vae_withoutcfg_withoutdropout.png"
 
 # read csv
 df_pixel = pd.read_csv(pixel_csv)
