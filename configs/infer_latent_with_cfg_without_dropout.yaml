@@ -1,0 +1,46 @@
+# /workspace/configs/eval_ldm_gray_numeric.yaml
+
+# ========== 模型（1通道 latent LDM） ==========
+vae_repo: "/workspace/experiments/latent_train_vae/final"
+cond_mean_path: /workspace/experiments/training_dataset/cond_mean.npy
+cond_std_path:  /workspace/experiments/training_dataset/cond_std.npy
+unet_ckpt: /workspace/experiments/latent_train_unet_without_dropout/unet_final.pt   # 先用800步这一版
+numeric_ckpt: /workspace/experiments/latent_train_unet_without_dropout/numeric_enc_final.pt
+latent_mean_path: /workspace/experiments/training_dataset/latent_mean.npy
+
+unet_arch:
+  sample_size: 32
+  in_channels: 4
+  out_channels: 4
+  down_block_types: ["DownBlock2D","DownBlock2D","DownBlock2D","DownBlock2D"]
+  up_block_types:   ["UpBlock2D","UpBlock2D","UpBlock2D","UpBlock2D"]
+  block_out_channels: [128, 256, 256, 256]
+  layers_per_block: 2
+  cross_attention_dim: 768
+  attention_head_dim: 8
+
+cond_dim: 3
+hidden_size: 768
+seq_len: 16
+prediction_type: sample # 可选: epsilon / sample / v_prediction
+
+
+binarize: false                # 先关，先看灰度输出是否结构正确
+binarize_threshold: 0.5
+real_dir: "/workspace/dataset_split/test"
+out_dir:  "/workspace/runs/latent_train_unet_without_dropout_with_cfg"
+
+steps: 50
+guidance: 3.0     # ★ CFG 强度：1.0 = 关；2~5 之间可以试一试
+height: 256
+width:  256
+eta: 0.0
+scaling_factor: 0.27
+scheduler:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: "scaled_linear"
+
+seed: 123
+batch_size: 1

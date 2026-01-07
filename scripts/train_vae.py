@@ -58,13 +58,15 @@ def main():
         layers_per_block=2
     ).to(device)
 
+    vae.config.scaling_factor = float(cfg.get("scaling_factor", 1.0))
+
     # 记录/输出目录
     out_dir = Path(cfg["optim"]["out_dir"]); out_dir.mkdir(parents=True, exist_ok=True)
     log_path = out_dir / "vae_train.tsv"
     if not log_path.exists():
         with open(log_path, "w", newline="") as f:
             csv.writer(f, delimiter="\t").writerow(["step","recon","kl","loss","lr","ts"])
-    
+
     # 追加写人类可读的日志
     txt_log_path = out_dir / "train_stdout.log"
     def log_line(msg: str):
@@ -77,6 +79,8 @@ def main():
         print(line, flush=True)
         with open(txt_log_path, "a", encoding="utf-8") as f:
             f.write(line + "\n")
+        print(f"[VAE] scaling_factor = {vae.config.scaling_factor}")
+
 
 
     # 优化器/调度器
@@ -93,7 +97,6 @@ def main():
     vae.train()
     while step < max_steps:
         for x in dl:
-            x = x.to(device)                    # [B,1,H,W], in [-1,1]
             x = x.to(device)  # [B,1,H,W], in [-1,1]
 
             # 编码 → 得到分布（AutoencoderKLOutput.latent_dist）
@@ -116,26 +119,38 @@ def main():
             torch.nn.utils.clip_grad_norm_(vae.parameters(), 1.0)
             opt.step(); sch.step(); step += 1
 
-
             if step % log_every == 0:
                 with open(log_path, "a", newline="") as f:
                     csv.writer(f, delimiter="\t").writerow([
                         step, float(rec.mean().item()), float(kld.mean().item()),
                         float(loss.item()), float(sch.get_last_lr()[0]), int(time.time())
                     ])
-                log_line(f"step {step}/{max_steps} | rec {rec.mean():.4f} | kl {kld.mean():.4f} | loss {loss.item():.4f}")
+                print(f"step {step}/{max_steps} | rec {rec.mean():.4f} | kl {kld.mean():.4f} | loss {loss.item():.4f}")
+                print(f"[x] {x.mean().item():.4f}/{x.std().item():.4f} | [z] {z.mean().item():.4f}/{z.std().item():.4f}")
+
+                print(f"[VAE] x mean/std={x.mean().item():.4f}/{x.std().item():.4f} | "
+                    f"z mean/std={z.mean().item():.4f}/{z.std().item():.4f} | "
+                    f"mean mean/std={mean.mean().item():.4f}/{mean.std().item():.4f} | "
+                    f"logvar mean={logvar.mean().item():.4f}")
+
 
             if step % save_every == 0:
                 vae.save_pretrained(str(out_dir / f"ckpt_step{step}"))   # diffusers 格式
                 # 预览重建
                 with torch.no_grad():
+                    grid_in  = vutils.make_grid((x.clamp(-1,1)+1)*0.5, nrow=4)
+                    grid_out = vutils.make_grid((x_rec.clamp(-1,1)+1)*0.5, nrow=4)
+                    vutils.save_image(grid_in,  out_dir / f"input_step{step}.png")
+                    vutils.save_image(grid_out, out_dir / f"recon_step{step}.png")
+
                     grid = vutils.make_grid((x_rec.clamp(-1,1)+1)*0.5, nrow=4)
                     vutils.save_image(grid, out_dir / f"recon_step{step}.png")
 
             if step >= max_steps: break
 
     vae.save_pretrained(str(out_dir / "final"))
-    print(f"[OK] VAE saved to {out_dir}/final")
+    log_line(f"step {step}/{max_steps} | rec {rec.mean():.4f} | kl {kld.mean():.4f} | loss {loss.item():.4f}")
+
 
 if __name__ == "__main__":
     main()

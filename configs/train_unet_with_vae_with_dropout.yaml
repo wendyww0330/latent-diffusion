@@ -1,0 +1,42 @@
+# configs/ldm_gray_numeric.yaml
+out_dir: /workspace/experiments/latent_train_unet_with_dropout
+train_dir: /workspace/dataset_split/train
+image_size: 256
+
+cond_dim: 3
+hidden_size: 768
+seq_len: 16
+
+vae_repo: /workspace/experiments/latent_train_vae/final   # 你自己训练的灰度VAE(1ch)路径
+
+unet:
+  sample_size: 32             # = image_size // 8
+  in_channels: 4
+  out_channels: 4
+  down_block_types: ["DownBlock2D","DownBlock2D","DownBlock2D","DownBlock2D"]
+  up_block_types:   ["UpBlock2D","UpBlock2D","UpBlock2D","UpBlock2D"]
+  block_out_channels: [128, 256, 256, 256]   # 起步稳妥，省显存
+  layers_per_block: 2
+  cross_attention_dim: 768
+  attention_head_dim: 8
+
+scheduler:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: scaled_linear
+
+prediction_type: sample   # 可选: epsilon / sample / v_prediction
+weight_decay: 1.0e-2
+scaling_factor: 0.27
+cond_dropout_prob: 0.1
+overfit_one_batch: true
+
+batch_size: 16
+num_workers: 4
+lr: 5.0e-6
+max_steps: 100000
+warmup: 2000
+save_every: 10000
+log_every: 100
+seed: 123

@@ -1,23 +1,24 @@
 model:
+  target: "autoencoder_kl_gray"        # 仅为标识，脚本中不用
   params:
-    embed_dim: 1
-    kl_weight: 1.0e-6
+    embed_dim: 4                      # == z_channels
+    kl_weight: 1.0e-6                  # KL 正则权重（可 1e-6 ~ 1e-5）
     ddconfig:
       double_z: true
-      z_channels: 1
-      resolution: 256           # resolution
-      in_channels: 1
-      out_ch: 1
+      z_channels: 4                    # ★ latent 1 通道
+      resolution: 256                  # 训练/期待图像分辨率（可 256/512）
+      in_channels: 1                   # 输入灰度
+      out_ch: 1                        # 输出灰度
       ch: 128
-      ch_mult: [1, 2, 4, 4]
+      ch_mult: [1, 2, 4, 4]            # f≈8（最终下采样 8x）
       num_res_blocks: 2
-      attn_resolutions: []
+      attn_resolutions: []             # 灰度重建可先不加注意力
       dropout: 0.0
 
 data:
-  image_size: 256
-  train_dir: "./dataset_split/train"   # path
-  batch_size: 4
+  image_size: 256                      # 与 ddconfig.resolution 一致
+  train_dir: "/workspace/dataset_split/train"
+  batch_size: 8
   num_workers: 4
   normalize_mean: [0.5]
   normalize_std:  [0.5]
@@ -27,6 +28,7 @@ optim:
   weight_decay: 1.0e-5
   max_steps: 20000
   warmup: 2000
-  save_every: 5000
+  save_every: 1000
   log_every: 100
-  out_dir: "./experiments/train_vae"
+  ema: false                           # 简化起见先关
+  out_dir: "/workspace/experiments/latent_train_vae"
