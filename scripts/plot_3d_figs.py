@@ -15,35 +15,17 @@ CSV_PATH = "/workspace/latent-v2/inverse_problem_all_signals_summary.csv"
 
 # 21 个目录（自动生成 label）
 IMAGE_DIRS = [
-    ("/workspace/latent-v2/dataset_split/test", "gt_test"),
-
-    # DDPM
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step10000",  "ddpm_step10000"),
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step20000",  "ddpm_step20000"),
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step30000",  "ddpm_step30000"),
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step40000",  "ddpm_step40000"),
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step50000",  "ddpm_step50000"),
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step60000",  "ddpm_step60000"),
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step70000",  "ddpm_step70000"),
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step80000",  "ddpm_step80000"),
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step90000",  "ddpm_step90000"),
-    ("/workspace/latent-v2/runs/ddpm_without_cfg/step100000", "ddpm_step100000"),
 
     # LATENT LDM
-    ("/workspace/latent-v2/runs/latent_without_cfg/step10000",  "latent_step10000"),
-    ("/workspace/latent-v2/runs/latent_without_cfg/step20000",  "latent_step20000"),
-    ("/workspace/latent-v2/runs/latent_without_cfg/step30000",  "latent_step30000"),
-    ("/workspace/latent-v2/runs/latent_without_cfg/step40000",  "latent_step40000"),
-    ("/workspace/latent-v2/runs/latent_without_cfg/step50000",  "latent_step50000"),
-    ("/workspace/latent-v2/runs/latent_without_cfg/step60000",  "latent_step60000"),
-    ("/workspace/latent-v2/runs/latent_without_cfg/step70000",  "latent_step70000"),
-    ("/workspace/latent-v2/runs/latent_without_cfg/step80000",  "latent_step80000"),
-    ("/workspace/latent-v2/runs/latent_without_cfg/step90000",  "latent_step90000"),
-    ("/workspace/latent-v2/runs/latent_without_cfg/step100000", "latent_step100000"),
+    ("/workspace/latent-v2/runs/latent_train_unet_with_dropout_with_cfg",  "latent_train_unet_with_dropout_with_cfg"),
+    ("/workspace/latent-v2/runs/latent_train_unet_with_dropout_without_cfg",  "latent_train_unet_with_dropout_without_cfg"),
+    ("/workspace/latent-v2/runs/latent_train_unet_without_dropout_with_cfg",  "latent_train_unet_without_dropout_with_cfg"),
+    ("/workspace/latent-v2/runs/latent_train_unet_without_dropout_without_cfg",  "latent_train_unet_without_dropout_without_cfg")
+  
 ]
 
 
-OUT_DIR = "/workspace/latent-v2/plots/ratio_3d_figs"  # 所有图存这里
+OUT_DIR = "/workspace/latent-v2/plots/latent_3d_result"  # 所有图存这里
 
 
 # ======== 2. 名字匹配：CSV ↔ 图像 ========

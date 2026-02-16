@@ -138,7 +138,9 @@ def main():
     log_path = out_dir / "ldm_train.tsv"
     if not log_path.exists():
         with open(log_path, "w", newline="") as f:
-            csv.writer(f, delimiter="\t").writerow(["step", "loss", "lr", "ts"])
+            csv.writer(f, delimiter="\t").writerow(["step","loss","loss_ma200","lr","ts","t_mean","drop_ratio","black_ratio","latent_mean","latent_std","t_bucket"]
+)
+
 
     txt_log_path = out_dir / "train_stdout.log"
 
@@ -266,10 +268,12 @@ def main():
     step = 0
     saved_latent_mean = False
 
+    from collections import deque
+    loss_win = deque(maxlen=200)
+
     while step < max_steps:
 
-        from collections import deque
-        loss_win = deque(maxlen=200)
+        
 
 
         for batch in dl:
@@ -286,8 +290,10 @@ def main():
 
             # A) VAE encode -> latents (scaled)
             with torch.no_grad():
-                z_raw = vae.encode(imgs).latent_dist.sample()
+                posterior = vae.encode(imgs).latent_dist
+                z_raw = posterior.mean  # deterministic; reduces variance/spikes
                 latents = z_raw * SCALING_FACTOR
+
 
             # Save a reference latent_mean once (optional, helps inference alignment/debug)
             if (not saved_latent_mean) and (step >= 50):
@@ -298,9 +304,11 @@ def main():
 
             # B) Condition embedding + dropout
             cond_emb = enc(cond).to(dtype=torch.float32)  # [B,L,H]
+            mask = None
             if cond_dropout_prob > 0:
                 mask = (torch.rand(bsz, device=device) < cond_dropout_prob).float()
                 cond_emb = cond_emb * (1.0 - mask)[:, None, None]
+
 
             # C) Add noise
             timesteps = torch.randint(
@@ -312,6 +320,12 @@ def main():
             )
             noise = torch.randn_like(latents)
             noisy_latents = noise_scheduler.add_noise(latents, noise, timesteps)
+
+            # --- timestep bucket (for analysis) ---
+            num_bins = 10
+            t_bucket = (timesteps * num_bins // noise_scheduler.config.num_train_timesteps)
+            t_bucket = int(t_bucket.float().mean().item())  # batch-level
+
 
             # D) Predict
             model_pred = unet(noisy_latents, timesteps, encoder_hidden_states=cond_emb).sample
@@ -349,11 +363,35 @@ def main():
             loss_win.append(float(loss.item()))
             
             if step % log_every == 0:
+
+
                 lr_now = opt.param_groups[0]["lr"]
+
+                # ---- extra diagnostics ----
+                t_mean = float(timesteps.float().mean().item())
+                drop_ratio = float(mask.mean().item()) if mask is not None else 0.0
+                black_ratio = float((imgs.abs().sum(dim=(1,2,3)) < 1e-6).float().mean().item())
+
+                latent_mean = float(latents.mean().item())
+                latent_std  = float(latents.std().item())
+
+
+                loss_ma200 = float(sum(loss_win) / len(loss_win))
                 with open(log_path, "a", newline="") as f:
-                    csv.writer(f, delimiter="\t").writerow([step, float(loss.item()), float(lr_now), int(time.time())])
-                print(f"Step {step}/{max_steps} | Loss: {loss.item():.4f} | "
-                    f"Loss_ma200: {sum(loss_win)/len(loss_win):.4f} | LR: {lr_now:.2e}")
+                    csv.writer(f, delimiter="\t").writerow([
+                        step,float(loss.item()),
+                        loss_ma200,
+                        float(lr_now),
+                        int(time.time()),
+                        t_mean, drop_ratio, black_ratio,
+                        latent_mean, latent_std, t_bucket
+                    ])
+
+                print(
+                    f"Step {step}/{max_steps} | Loss: {loss.item():.4f} | "
+                    f"Loss_ma200: {sum(loss_win)/len(loss_win):.4f} | LR: {lr_now:.2e} | "
+                    f"t_mean: {t_mean:.1f} | drop: {drop_ratio:.2f} | black: {black_ratio:.2f}"
+                )
 
             # Save
             if step % save_every == 0:
