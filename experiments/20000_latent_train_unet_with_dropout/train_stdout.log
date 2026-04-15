@@ -1,0 +1,118 @@
+2026-03-03 14:59:56 | [Config] image_size=256 batch_size=4 num_workers=4
+2026-03-03 14:59:56 | [Config] lr(fixed)=5e-06 weight_decay=0.01 max_steps=20000
+2026-03-03 14:59:56 | [Config] cond_dropout_prob=0.1
+2026-03-03 14:59:56 | [Config] scaling_factor(yaml)=0.27
+2026-03-03 14:59:56 | [Config] prediction_type(yaml)=sample
+2026-03-03 14:59:57 | [VAE] Loaded from /workspace/latent-v2/experiments/latent_train_vae/final (frozen)
+2026-03-03 14:59:58 | [UNet] Configured: in=4, out=4
+2026-03-03 14:59:58 | [ENC] NumericEncoder: cond_dim=3, hidden=768, seq_len=16
+2026-03-03 14:59:58 | [Scheduler] num_train_timesteps=1000 prediction_type=sample
+2026-03-03 14:59:58 | [DATA] N=1800 images from /workspace/latent-v2/dataset_split/train
+2026-03-03 14:59:58 | [DATA] Calculating cond mean/std (up to 2000 samples)...
+2026-03-03 15:00:22 | [ENC] Set Norm: mean=[23952.049  12115.994   6955.5796], std=[ 732.16364 4150.056   3199.09   ]
+2026-03-03 15:00:22 | [ENC] Saved cond stats to /workspace/latent-v2/experiments/20000_latent_train_unet_with_dropout/cond_mean.npy and /workspace/latent-v2/experiments/20000_latent_train_unet_with_dropout/cond_std.npy
+2026-03-03 15:00:22 | [OPT] Using fixed learning rate (no scheduler).
+2026-03-03 15:00:30 | [LATENTS] Saved latent_mean=0.099666 to /workspace/latent-v2/experiments/20000_latent_train_unet_with_dropout/latent_mean.npy
+2026-03-03 15:00:45 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:01:05 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:01:25 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:01:46 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:02:06 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:02:26 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:02:47 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:03:07 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:03:27 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:03:48 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:04:08 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:04:29 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:04:49 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:05:10 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:05:30 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:05:50 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:06:10 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:06:30 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:06:51 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:07:11 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:07:31 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:07:51 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:08:12 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:08:32 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:08:52 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:09:13 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:09:33 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:09:53 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:10:14 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:10:34 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:10:54 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:11:15 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:11:35 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:11:56 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:12:16 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:12:36 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:12:57 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:13:17 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:13:37 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:13:58 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:14:18 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:14:38 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:14:59 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:15:19 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:15:39 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:16:00 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:16:20 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:16:41 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:17:01 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:17:21 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:17:22 | [CKPT] Saved checkpoint at step 10000
+2026-03-03 15:17:42 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:18:03 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:18:23 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:18:43 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:19:03 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:19:24 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:19:44 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:20:04 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:20:25 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:20:45 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:21:06 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:21:26 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:21:46 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:22:06 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:22:27 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:22:47 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:23:07 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:23:28 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:23:48 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:24:08 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:24:28 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:24:49 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:25:09 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:25:29 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:25:50 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:26:10 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:26:31 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:26:51 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:27:11 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:27:32 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:27:52 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:28:12 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:28:33 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:28:53 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:29:13 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:29:34 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:29:54 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:30:15 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:30:35 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:30:55 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:31:16 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:31:36 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:31:57 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:32:17 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:32:37 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:32:58 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:33:18 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:33:39 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:33:59 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:34:19 | [LATENTS] mean=0.0997 std=0.8678 min=-2.0572 max=1.8722
+2026-03-03 15:34:20 | [CKPT] Saved checkpoint at step 20000
+2026-03-03 15:34:20 | [DONE] Training finished. Saved final models.

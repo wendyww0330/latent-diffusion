@@ -1,13 +1,13 @@
 # configs/ldm_gray_numeric.yaml
-out_dir: /workspace/experiments/latent_train_unet_with_dropout
-train_dir: /workspace/dataset_split/train
+out_dir: /workspace/latent-v2/experiments/20000_latent_train_unet_with_dropout
+train_dir: /workspace/latent-v2/dataset_split/train
 image_size: 256
 
 cond_dim: 3
 hidden_size: 768
 seq_len: 16
 
-vae_repo: /workspace/experiments/latent_train_vae/final   # 你自己训练的灰度VAE(1ch)路径
+vae_repo: /workspace/latent-v2/experiments/latent_train_vae/final   # 你自己训练的灰度VAE(1ch)路径
 
 unet:
   sample_size: 32             # = image_size // 8
@@ -32,10 +32,10 @@ scaling_factor: 0.27
 cond_dropout_prob: 0.1
 overfit_one_batch: true
 
-batch_size: 16
+batch_size: 4
 num_workers: 4
 lr: 5.0e-6
-max_steps: 100000
+max_steps: 20000
 warmup: 2000
 save_every: 10000
 log_every: 100
